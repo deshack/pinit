@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2013-10-28 14:52+0100\n"
-"PO-Revision-Date: 2013-10-28 14:56+0100\n"
+"POT-Creation-Date: 2013-10-28 15:48+0100\n"
+"PO-Revision-Date: 2013-10-28 15:49+0100\n"
 "Last-Translator: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language-Team: Mattia Migliorini <deshack@ubuntu.com>\n"
 "MIME-Version: 1.0\n"
@@ -15,42 +15,48 @@ msgstr ""
 
 #: ../pinit.php:34
 msgid "Pinterest Profile Widget"
-msgstr "Pinterest Widget Profilo"
+msgstr "Widget Profilo Pinterest"
 
 #: ../pinit.php:35
-msgid ""
-"Pinterest Profile Widget: show up to 30 of your latest pins on your site."
-msgstr ""
-"Pinterest Widget Profilo: mostra fino a 30 dei tuoi pin recenti nel tuo sito."
+msgid "Show up to 30 of your latest pins on your site."
+msgstr "Mostra fino a 30 dei tuoi pin recenti nel tuo sito."
 
-#: ../pinit.php:86
+#: ../pinit.php:86 ../pinit.php:203
 msgid "Title:"
 msgstr "Titolo:"
 
-#: ../pinit.php:91
+#: ../pinit.php:91 ../pinit.php:208
 msgid "Pinterest User URL:"
 msgstr "URL Profilo Pinterest:"
 
-#: ../pinit.php:98
+#: ../pinit.php:98 ../pinit.php:215
 msgid "Image Width:"
 msgstr "Larghezza immagine:"
 
-#: ../pinit.php:101
-msgid "min: 60; leave 0 for 92"
-msgstr "min: 60; lasciare 0 per 92"
+#: ../pinit.php:101 ../pinit.php:218
+msgid "min: 60; leave 0 or blank for 92"
+msgstr "min: 60; lasciare 0 o vuoto per 92"
 
-#: ../pinit.php:105
+#: ../pinit.php:105 ../pinit.php:222
 msgid "Board Height:"
-msgstr "Altezza widget:"
+msgstr "Altezza bacheca:"
 
-#: ../pinit.php:108
-msgid "min: 60; leave 0 for 175"
-msgstr "min: 60; lasciare 0 per 175"
+#: ../pinit.php:108 ../pinit.php:225
+msgid "min: 60; leave 0 or blank for 175"
+msgstr "min: 60; lasciare 0 o vuoto per 175"
 
-#: ../pinit.php:112
+#: ../pinit.php:112 ../pinit.php:229
 msgid "Board Width:"
-msgstr "Larghezza widget:"
+msgstr "Larghezza bacheca:"
 
-#: ../pinit.php:115
-msgid "min: 130; leave 0 for auto"
-msgstr "min: 130; lasciare 0 per auto"
+#: ../pinit.php:115 ../pinit.php:232
+msgid "min: 130; leave 0 or blank for auto"
+msgstr "min: 130; lasciare 0 o vuoto per auto"
+
+#: ../pinit.php:151
+msgid "Pinterest Board Widget"
+msgstr "Widget Bacheca Pinterest"
+
+#: ../pinit.php:152
+msgid "Show up to 30 of your favorite board's latest pins."
+msgstr "Mostra fino a 30 dei pin recenti dalla tua bacheca preferita."
