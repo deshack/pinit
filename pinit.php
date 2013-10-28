@@ -67,7 +67,7 @@ class pit_widget_profile extends WP_Widget {
 			$data_width = ' data-pin-board-width="' . $width . '"';
 
 		if ( ! empty( $user ) )
-			echo '<a data-pin-do="embedUser" href="http://www.pinterest.com/' . $user . '"' . $data_image_width . $data_height . $data_width . '></a>';
+			echo '<a data-pin-do="embedUser" href="http://www.pinterest.com/' . $user . '/"' . $data_image_width . $data_height . $data_width . '></a>';
 
 		echo $args['after_widget'];
 	}
@@ -185,7 +185,7 @@ class pit_widget_board extends WP_Widget {
 			$data_width = ' data-pin-board-width="' . $width . '"';
 
 		if ( ! empty( $user ) && ! empty( $board ) )
-			echo '<a data-pin-do="embedBoard" href="http://www.pinterest.com/' . $user . '/' . $board . '"' . $data_image_width . $data_height . $data_width . '></a>';
+			echo '<a data-pin-do="embedBoard" href="http://www.pinterest.com/' . $user . '/' . $board . '/"' . $data_image_width . $data_height . $data_width . '></a>';
 
 		echo $args['after_widget'];
 	}
@@ -295,8 +295,8 @@ class pit_widget_pin extends WP_Widget {
 		if ( ! empty( $title ) )
 			echo $args['before_title'] . $title . $args['after_title'];
 
-		if ( ! empty( $user ) )
-			echo '<a data-pin-do="embedPin" href="http://www.pinterest.com/pin/' . $id . '"></a>';
+		if ( ! empty( $id ) )
+			echo '<a data-pin-do="embedPin" href="http://www.pinterest.com/pin/' . $id . '/"></a>';
 
 		echo $args['after_widget'];
 	}
