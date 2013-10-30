@@ -3,21 +3,27 @@ Contributors: deshack
 Donate link: http://www.deshack.net/donate/
 Tags: widget, pinterest
 Requires at least: 2.8
-Tested up to: 3.7
-Stable tag: 0.1
+Tested up to: 3.7.1
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
-Handy plugin that adds Pinterest Profile Widget.
+Handy plugin that adds Pinterest Pin Widget, Profile Widget and Board Widget to your WordPress site.
 
 == Description ==
 
 This plugin allows you to add Pinterest resources to your site without worrying about codes.
 
 Features include:
-* Profile Widget
 
-Will support other resources soon.
+ * Pin Widget
+ * Profile Widget
+ * Board Widget
+
+Languages:
+
+ * English
+ * Italian
 
 == Installation ==
 
@@ -37,7 +43,15 @@ Pinit doesn't need any configuration or options page: you can handle every widge
 
 == Changelog ==
 
+= 0.3 =
+* Feature: Pin Widget
+
+= 0.2 =
+* Feature: Board Widget
+
 = 0.1 =
 * Feature: Profile Widget
 
 == Upgrade Notice ==
+
+New features: Board and Pin Widgets.

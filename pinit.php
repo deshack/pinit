@@ -96,21 +96,21 @@ class pit_widget_profile extends WP_Widget {
 
 		<p>
 			<label for="<?php echo $this->get_field_id('image_width'); ?>"><?php _e( 'Image Width:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('image_width'); ?>" name="<?php echo $this->get_field_name('image_width'); ?>" type="text" value="<?php echo esc_attr( $instance['image_width'] ); ?>">
+			<input class="widefat pit-image-width" id="<?php echo $this->get_field_id('image_width'); ?>" name="<?php echo $this->get_field_name('image_width'); ?>" type="text" value="<?php echo esc_attr( $instance['image_width'] ); ?>">
 			<br>
 			<small><?php _e( 'min: 60; leave 0 or blank for 92', 'pit' ); ?></small>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('height'); ?>"><?php _e( 'Board Height:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo esc_attr( $instance['height'] ); ?>">
+			<input class="widefat pit-height" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo esc_attr( $instance['height'] ); ?>">
 			<br>
 			<small><?php _e( 'min: 60; leave 0 or blank for 175', 'pit' ); ?></small>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('width'); ?>"><?php _e( 'Board Width:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo esc_attr( $instance['width'] ); ?>">
+			<input class="widefat pit-width" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo esc_attr( $instance['width'] ); ?>">
 			<br>
 			<small><?php _e( 'min: 130; leave 0 or blank for auto', 'pit' ); ?></small>
 		</p>
@@ -221,21 +221,21 @@ class pit_widget_board extends WP_Widget {
 
 		<p>
 			<label for="<?php echo $this->get_field_id('image_width'); ?>"><?php _e( 'Image Width:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('image_width'); ?>" name="<?php echo $this->get_field_name('image_width'); ?>" type="text" value="<?php echo esc_attr( $instance['image_width'] ); ?>">
+			<input class="widefat pit-image-width" id="<?php echo $this->get_field_id('image_width'); ?>" name="<?php echo $this->get_field_name('image_width'); ?>" type="text" value="<?php echo esc_attr( $instance['image_width'] ); ?>">
 			<br>
 			<small><?php _e( 'min: 60; leave 0 or blank for 92', 'pit' ); ?></small>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('height'); ?>"><?php _e( 'Board Height:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo esc_attr( $instance['height'] ); ?>">
+			<input class="widefat pit-height" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo esc_attr( $instance['height'] ); ?>">
 			<br>
 			<small><?php _e( 'min: 60; leave 0 or blank for 175', 'pit' ); ?></small>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('width'); ?>"><?php _e( 'Board Width:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo esc_attr( $instance['width'] ); ?>">
+			<input class="widefat pit-width" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo esc_attr( $instance['width'] ); ?>">
 			<br>
 			<small><?php _e( 'min: 130; leave 0 or blank for auto', 'pit' ); ?></small>
 		</p>
