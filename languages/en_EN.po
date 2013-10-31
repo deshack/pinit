@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2013-10-30 11:18+0100\n"
-"PO-Revision-Date: 2013-10-30 11:18+0100\n"
+"POT-Creation-Date: 2013-10-31 18:43+0100\n"
+"PO-Revision-Date: 2013-10-31 18:43+0100\n"
 "Last-Translator: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language-Team: deshack <deshack@ubuntu.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,66 +13,47 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pinit.php:34
-msgid "Pinterest Profile Widget"
+#: ../pinit.php:77
+msgid "Pinterest Widget"
 msgstr ""
 
-#: ../pinit.php:35
-msgid "Show up to 30 of your latest pins on your site."
+#: ../pinit.php:78
+msgid "Show Pit, Profile or Board Widget."
 msgstr ""
 
-#: ../pinit.php:86 ../pinit.php:204 ../pinit.php:315
+#: ../pinit.php:166
 msgid "Title:"
 msgstr ""
 
-#: ../pinit.php:91 ../pinit.php:209
-msgid "Pinterest Username:"
+#: ../pinit.php:171
+msgid "Type:"
 msgstr ""
 
-#: ../pinit.php:98 ../pinit.php:223
+#: ../pinit.php:189
+#, php-format
+msgid "Pinterest %1$s URL:"
+msgstr ""
+
+#: ../pinit.php:209
 msgid "Image Width:"
 msgstr ""
 
-#: ../pinit.php:101 ../pinit.php:226
+#: ../pinit.php:212
 msgid "min: 60; leave 0 or blank for 92"
 msgstr ""
 
-#: ../pinit.php:105 ../pinit.php:230
+#: ../pinit.php:216
 msgid "Board Height:"
 msgstr ""
 
-#: ../pinit.php:108 ../pinit.php:233
+#: ../pinit.php:219
 msgid "min: 60; leave 0 or blank for 175"
 msgstr ""
 
-#: ../pinit.php:112 ../pinit.php:237
+#: ../pinit.php:223
 msgid "Board Width:"
 msgstr ""
 
-#: ../pinit.php:115 ../pinit.php:240
+#: ../pinit.php:226
 msgid "min: 130; leave 0 or blank for auto"
-msgstr ""
-
-#: ../pinit.php:151
-msgid "Pinterest Board Widget"
-msgstr ""
-
-#: ../pinit.php:152
-msgid "Show up to 30 of your favorite board's latest pins."
-msgstr ""
-
-#: ../pinit.php:216
-msgid "Board:"
-msgstr ""
-
-#: ../pinit.php:277
-msgid "Pinterest Pin Widget"
-msgstr ""
-
-#: ../pinit.php:278
-msgid "Embed one of your pins on your site."
-msgstr ""
-
-#: ../pinit.php:320
-msgid "Pin ID:"
 msgstr ""

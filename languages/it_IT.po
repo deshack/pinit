@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2013-10-28 15:48+0100\n"
-"PO-Revision-Date: 2013-10-28 15:49+0100\n"
+"POT-Creation-Date: 2013-10-31 18:43+0100\n"
+"PO-Revision-Date: 2013-10-31 18:43+0100\n"
 "Last-Translator: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language-Team: Mattia Migliorini <deshack@ubuntu.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,50 +13,58 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pinit.php:34
-msgid "Pinterest Profile Widget"
-msgstr "Widget Profilo Pinterest"
+#: ../pinit.php:77
+#, fuzzy
+msgid "Pinterest Widget"
+msgstr "Widget Bacheca Pinterest"
 
-#: ../pinit.php:35
-msgid "Show up to 30 of your latest pins on your site."
-msgstr "Mostra fino a 30 dei tuoi pin recenti nel tuo sito."
+#: ../pinit.php:78
+#, fuzzy
+msgid "Show Pit, Profile or Board Widget."
+msgstr "Widget Bacheca Pinterest"
 
-#: ../pinit.php:86 ../pinit.php:203
+#: ../pinit.php:166
 msgid "Title:"
 msgstr "Titolo:"
 
-#: ../pinit.php:91 ../pinit.php:208
-msgid "Pinterest User URL:"
+#: ../pinit.php:171
+msgid "Type:"
+msgstr ""
+
+#: ../pinit.php:189
+#, fuzzy, php-format
+msgid "Pinterest %1$s URL:"
 msgstr "URL Profilo Pinterest:"
 
-#: ../pinit.php:98 ../pinit.php:215
+#: ../pinit.php:209
 msgid "Image Width:"
 msgstr "Larghezza immagine:"
 
-#: ../pinit.php:101 ../pinit.php:218
+#: ../pinit.php:212
 msgid "min: 60; leave 0 or blank for 92"
 msgstr "min: 60; lasciare 0 o vuoto per 92"
 
-#: ../pinit.php:105 ../pinit.php:222
+#: ../pinit.php:216
 msgid "Board Height:"
 msgstr "Altezza bacheca:"
 
-#: ../pinit.php:108 ../pinit.php:225
+#: ../pinit.php:219
 msgid "min: 60; leave 0 or blank for 175"
 msgstr "min: 60; lasciare 0 o vuoto per 175"
 
-#: ../pinit.php:112 ../pinit.php:229
+#: ../pinit.php:223
 msgid "Board Width:"
 msgstr "Larghezza bacheca:"
 
-#: ../pinit.php:115 ../pinit.php:232
+#: ../pinit.php:226
 msgid "min: 130; leave 0 or blank for auto"
 msgstr "min: 130; lasciare 0 o vuoto per auto"
 
-#: ../pinit.php:151
-msgid "Pinterest Board Widget"
-msgstr "Widget Bacheca Pinterest"
+#~ msgid "Pinterest Profile Widget"
+#~ msgstr "Widget Profilo Pinterest"
 
-#: ../pinit.php:152
-msgid "Show up to 30 of your favorite board's latest pins."
-msgstr "Mostra fino a 30 dei pin recenti dalla tua bacheca preferita."
+#~ msgid "Show up to 30 of your latest pins on your site."
+#~ msgstr "Mostra fino a 30 dei tuoi pin recenti nel tuo sito."
+
+#~ msgid "Show up to 30 of your favorite board's latest pins."
+#~ msgstr "Mostra fino a 30 dei pin recenti dalla tua bacheca preferita."
