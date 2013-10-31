@@ -160,6 +160,8 @@ class pit_pinterest extends WP_Widget {
 		$boxHeight = esc_attr($instance['boxHeight']);	// Board Height
 		$boxWidth = esc_attr($instance['boxWidth']);	// Board Width
 		$select = esc_attr($instance['select']);		// Widget Type Selector
+		if ( empty( $select ) )
+			$select = 'pin';
 		?>
 
 		<p>
@@ -176,7 +178,7 @@ class pit_pinterest extends WP_Widget {
 
 			<li>
 				<label>
-					<input id="<?php echo $this->get_field_id('select'); ?>-<?php echo $option; ?>" name="<?php echo $this->get_field_name('select'); ?>" type="radio" value="<?php echo $option; ?>" <?php checked( $select, $option, false ); ?>>
+					<input id="<?php echo $this->get_field_id('select'); ?>-<?php echo $option; ?>" name="<?php echo $this->get_field_name('select'); ?>" type="radio" value="<?php echo $option; ?>" <?php checked( $select, $option, true ); ?>>
 					<?php _e( ucfirst($option) ); ?>
 				</label>
 			</li>
@@ -241,9 +243,10 @@ class pit_pinterest extends WP_Widget {
 		$instance = $old_instance;
 		$instance['title'] = $new_instance['title'];
 		$instance['purl'] = $new_instance['purl'];
-		$instance['imgWidth'] = intval($new_instance['imgWidth']);
-		$instance['boxHeight'] = intval($new_instance['boxHeight']);
-		$instance['boxWidth'] = intval($new_instance['boxWidth']);
+		$instance['imgWidth'] = $new_instance['imgWidth'];
+		$instance['boxHeight'] = $new_instance['boxHeight'];
+		$instance['boxWidth'] = $new_instance['boxWidth'];
+		$instance['select'] = $new_instance['select'];
 
 		return $instance;
 	}
@@ -252,4 +255,4 @@ class pit_pinterest extends WP_Widget {
 /**
  * Register widgets
  */
-add_action( 'widgets_init', create_function('', 'return register_widget( "pit_pinterest" );');
+add_action( 'widgets_init', create_function('', 'return register_widget( "pit_pinterest" );') );
