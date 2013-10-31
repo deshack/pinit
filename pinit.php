@@ -209,23 +209,23 @@ class pit_pinterest extends WP_Widget {
 
 		<p>
 			<label for="<?php echo $this->get_field_id('imgWidth'); ?>"><?php _e( 'Image Width:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('imgWidth'); ?>" name="<?php echo $this->get_field_name('imgWidth'); ?>" type="text" value="<?php echo $imgWidth; ?>">
+			<input class="widefat" id="<?php echo $this->get_field_id('imgWidth'); ?>" name="<?php echo $this->get_field_name('imgWidth'); ?>" type="text" value="<?php echo $imgWidth; ?>" min="60">
 			<br>
-			<small><?php _e( 'min: 60; leave 0 or blank for 92', 'pit' ); ?></small>
+			<small><?php _e( 'min: 60; leave blank for 92', 'pit' ); ?></small>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('boxHeight'); ?>"><?php _e( 'Board Height:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('boxHeight'); ?>" name="<?php echo $this->get_field_name('boxHeight'); ?>" type="text" value="<?php echo $boxHeight; ?>">
+			<input class="widefat" id="<?php echo $this->get_field_id('boxHeight'); ?>" name="<?php echo $this->get_field_name('boxHeight'); ?>" type="text" value="<?php echo $boxHeight; ?>" min="60">
 			<br>
-			<small><?php _e( 'min: 60; leave 0 or blank for 175', 'pit' ); ?></small>
+			<small><?php _e( 'min: 60; leave blank for 175', 'pit' ); ?></small>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('boxWidth'); ?>"><?php _e( 'Board Width:', 'pit' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('boxWidth'); ?>" name="<?php echo $this->get_field_name('boxWidth'); ?>" type="text" value="<?php echo $boxWidth; ?>">
+			<input class="widefat" id="<?php echo $this->get_field_id('boxWidth'); ?>" name="<?php echo $this->get_field_name('boxWidth'); ?>" type="text" value="<?php echo $boxWidth; ?>" min="130">
 			<br>
-			<small><?php _e( 'min: 130; leave 0 or blank for auto', 'pit' ); ?></small>
+			<small><?php _e( 'min: 130; leave blank for auto', 'pit' ); ?></small>
 		</p>
 
 		<?php
