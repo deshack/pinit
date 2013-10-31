@@ -1,14 +1,14 @@
 === Pinit: Pinterest for WordPress ===
-Contributors: deshack
+Contributors: deshack, iGenius
 Donate link: http://www.deshack.net/donate/
-Tags: widget, pinterest
-Requires at least: 2.8
+Tags: pinterest, badge, embedded pin, pin,embed pin, pinterest badge, embedded profile,embed profile, embedded board, embed board, pinterest follow, widgets, widgets pinterest, widget pinterest, sidebar, social network, shortcodes
+Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
-Handy plugin that adds Pinterest Pin Widget, Profile Widget and Board Widget to your WordPress site.
+Place Pinterest badges everywhere in you WordPress using simple Shortcodes or placing a Widget in your sidebar.
 
 == Description ==
 

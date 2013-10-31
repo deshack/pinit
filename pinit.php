@@ -3,11 +3,13 @@
  * Plugin Name: Pinit
  * Plugin URI: https://github.com/deshack/pinit
  * Description: Handy plugin that adds Pinterest Follow Button, Pin Widget, Profile Widget and Board Widget to your WordPress site.
- * Author: Mattia Migliorini
+ * Author: deshack
  * Version: 0.3
  * Author URI: http://www.deshack.net
  * License: GPLv2 or later
  */
+
+/*=== SETUP ===*/
 
 // Load text domain
 function pit_text_start() {
@@ -20,6 +22,38 @@ function pit_scripts() {
 	wp_enqueue_script( 'pinit', plugins_url( '/js/pinit.js', __FILE__ ), array(), '20131028', true );
 }
 add_action( 'wp_enqueue_scripts', 'pit_scripts' );
+
+/*=== SHORTCODES ===*/
+
+function pit_pin_shortcode( $atts ) {
+	$atts = extract( shortcode_atts( array(
+		'url' => 'http://www.pinterest.com/pin/99360735500167749/',
+	), $atts ) );
+
+	return '<a data-pin-do="embedPin" href="' . $url . '"></a>';
+}
+
+function pit_profile_shortcode( $atts ) {
+	$atts = extract( shortcode_atts( array(
+		'url' => 'http://www.pinterest.com/pinterest/',
+		'imgWidth' => '92',
+		'boxHeight' => '175',
+		'boxWidth' => 'auto'
+	), $atts ) );
+
+	return '<a data-pin-do="embedUser" href="' . $url . '" data-pin-scale-width="' . $imgWidth . '" data-pin-scale-height="' . $boxHeight . '" data-pin-board-width="' . $boxWidth . '"></a>';
+}
+
+function pit_board_shortcode( $atts ) {
+	$atts = extract( shortcode_atts( array(
+		'url' => 'http://www.pinterest.com/pinterest/pin-pets/',
+		'imgWidth' => '92',
+		'boxHeight' => '175',
+		'boxWidth' => 'auto'
+	), $atts ) );
+
+	return '<a data-pin-do="embedBoard" href="' . $url . '" data-pin-scale-width="' . $imgWidth . '" data-pin-scale-height="' . $boxHeight . '" data-pin-board-width="' . $boxWidth . '"></a>';
+}
 
 /**
  * Pinterest Profile Widget Class
