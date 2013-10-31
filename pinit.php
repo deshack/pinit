@@ -102,29 +102,8 @@ class pit_pinterest extends WP_Widget {
 		if ( ! empty( $title ) )
 			echo $before_title . $title . $after_title;
 
-		// URL
-		if ( ! empty( $purl ) )
-			$url = $purl;
-		else
-			$url = '';
-
-		// Image Width
-		if ( ! empty( $imgWidth ) )
-			$width = $imgWidth; // Custom value
-		else
-			$width = '92'; // Default value
-
-		// Board Height
-		if ( ! empty( $boxHeight ) )
-			$boardHeight = $boxHeight;
-		else
-			$boardHeight = '175';
-
-		// Board Width
-		if ( ! empty( $boxWidth ) )
-			$boardWidth = $boxWidth;
-		else
-			$boardWidth = 'auto';
+		// Inizialize the output
+		$output = '<a ';
 
 		// Select which type of widget to display
 		switch ($select) {
@@ -139,9 +118,27 @@ class pit_pinterest extends WP_Widget {
 				break;
 		}
 
-		if ( ! empty( $url ) )
-			echo '<a data-pin-do="' . $ptype . '" href="' . $url . '" data-pin-scale-width="' . $width . '" data-pin-scale-height="' . $boardHeight . '" data-pin-board-width="' . $boardWidth . '"></a>';
+		$output .= 'data-pin-do="' . $ptype . '" ';
 
+		// URL
+		if ( ! empty( $purl ) )
+			$output .= 'href="' . $purl . '" ';
+
+		// Image Width
+		if ( ! empty( $imgWidth ) )
+			$output .= 'data-pin-scale-width="' . $imgWidth . '" ';
+
+		// Board Height
+		if ( ! empty( $boxHeight ) )
+			$output .= 'data-pin-scale-height="' . $boxHeight . '" ';
+
+		// Board Width
+		if ( ! empty( $boxWidth ) )
+			$output .= 'data-pin-board-width="' . $boxWidth . '"';
+
+		$output .= '></a>';
+
+		echo $output;
 		echo $after_widget;
 	}
 
