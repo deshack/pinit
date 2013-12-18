@@ -3,8 +3,8 @@ Contributors: deshack, iGenius
 Donate link: http://www.deshack.net/donate/
 Tags: pinterest, badge, embedded pin, pin,embed pin, pinterest badge, embedded profile,embed profile, embedded board, embed board, pinterest follow, widgets, widgets pinterest, widget pinterest, sidebar, social network, shortcodes
 Requires at least: 3.5
-Tested up to: 3.7.1
-Stable tag: 0.3
+Tested up to: 3.8
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -19,6 +19,10 @@ Features include:
  * Pin Widget
  * Profile Widget
  * Board Widget
+
+ * Pin Shortcode [pit-pin]
+ * Profile Shortcode [pit-profile]
+ * Board Shortcode [pit-board]
 
 Languages:
 
@@ -42,6 +46,12 @@ Pinit doesn't need any configuration or options page: you can handle every widge
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0 =
+* Completely rewritten code
+* One widget to rule them all
+* Added shortcodes
+* Tested up to WP 3.8
 
 = 0.3 =
 * Feature: Pin Widget
