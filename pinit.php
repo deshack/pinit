@@ -19,10 +19,10 @@ function pit_text_start() {
 add_action( 'init', 'pit_text_start' );
 
 // Load the Pinterest JavaScript
-function pit_scripts() {
-	wp_enqueue_script( 'pinit', plugins_url( '/js/pinit.js', __FILE__ ), array(), '20131028', true );
+function pit_pinit_js() {
+	echo '<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
 }
-add_action( 'wp_enqueue_scripts', 'pit_scripts' );
+add_action( 'wp_head', 'pit_pinit_js' );
 
 /*=== SHORTCODES
  *==============================*/
@@ -74,7 +74,7 @@ class pit_pinterest extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'pit_pinterest', // Base ID
-			__( 'Pinterest Widget', 'pit' ), // Name
+			__( 'Pinterest (Pinit)', 'pit' ), // Name
 			array( 'description' => __( 'Show Pit, Profile or Board Widget.', 'pit' ) ) // Args
 		);
 	}
@@ -198,7 +198,7 @@ class pit_pinterest extends WP_Widget {
 						echo 'http://www.pinterest.com/username/boardname/';
 						break;
 					default:
-						echo 'http://www.pinterest.com/pin_id/';
+						echo 'http://www.pinterest.com/pini/pin_id/';
 						break;
 				} ?>
 			</small>

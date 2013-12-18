@@ -1,10 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2013-10-31 18:43+0100\n"
-"PO-Revision-Date: 2013-10-31 18:43+0100\n"
+"POT-Creation-Date: 2013-12-18 12:27-0000\n"
+"PO-Revision-Date: 2013-12-18 12:28-0000\n"
 "Last-Translator: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language-Team: Mattia Migliorini <deshack@ubuntu.com>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,51 +15,49 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../pinit.php:77
-#, fuzzy
-msgid "Pinterest Widget"
-msgstr "Widget Bacheca Pinterest"
+msgid "Pinterest (Pinit)"
+msgstr "Pinterest (Pinit)"
 
 #: ../pinit.php:78
-#, fuzzy
 msgid "Show Pit, Profile or Board Widget."
-msgstr "Widget Bacheca Pinterest"
+msgstr "Mostra Widget Pit, Profilo o Bacheca."
 
-#: ../pinit.php:166
+#: ../pinit.php:165
 msgid "Title:"
 msgstr "Titolo:"
 
-#: ../pinit.php:171
+#: ../pinit.php:170
 msgid "Type:"
-msgstr ""
+msgstr "Tipo:"
 
-#: ../pinit.php:189
-#, fuzzy, php-format
+#: ../pinit.php:188
+#, php-format
 msgid "Pinterest %1$s URL:"
-msgstr "URL Profilo Pinterest:"
+msgstr "URL %1$s Pinterest:"
 
-#: ../pinit.php:209
+#: ../pinit.php:208
 msgid "Image Width:"
 msgstr "Larghezza immagine:"
 
-#: ../pinit.php:212
-msgid "min: 60; leave 0 or blank for 92"
-msgstr "min: 60; lasciare 0 o vuoto per 92"
+#: ../pinit.php:211
+msgid "min: 60; leave blank for 92"
+msgstr "min: 60; lasciare vuoto per 92"
 
-#: ../pinit.php:216
+#: ../pinit.php:215
 msgid "Board Height:"
 msgstr "Altezza bacheca:"
 
-#: ../pinit.php:219
-msgid "min: 60; leave 0 or blank for 175"
-msgstr "min: 60; lasciare 0 o vuoto per 175"
+#: ../pinit.php:218
+msgid "min: 60; leave blank for 175"
+msgstr "min: 60; lasciare vuoto per 175"
 
-#: ../pinit.php:223
+#: ../pinit.php:222
 msgid "Board Width:"
 msgstr "Larghezza bacheca:"
 
-#: ../pinit.php:226
-msgid "min: 130; leave 0 or blank for auto"
-msgstr "min: 130; lasciare 0 o vuoto per auto"
+#: ../pinit.php:225
+msgid "min: 130; leave blank for auto"
+msgstr "min: 130; lasciare vuoto per auto"
 
 #~ msgid "Pinterest Profile Widget"
 #~ msgstr "Widget Profilo Pinterest"
