@@ -151,12 +151,19 @@ class pit_pinterest extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		$title = esc_attr($instance['title']);			// Widget Title
-		$purl = esc_attr($instance['purl']);			// Target URL
-		$imgWidth = esc_attr($instance['imgWidth']);	// Image Width
-		$boxHeight = esc_attr($instance['boxHeight']);	// Board Height
-		$boxWidth = esc_attr($instance['boxWidth']);	// Board Width
-		$select = esc_attr($instance['select']);		// Widget Type Selector
+		// Widget title
+		$title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
+		// Target URL
+		$purl = isset( $instance['purl'] ) ? esc_attr($instance['purl']) : '';
+		// Image Width
+		$imgWidth = isset( $instance['imgWidth'] ) ? esc_attr($instance['imgWidth']) : '';
+		// Board Height
+		$boxHeight = isset( $instance['boxHeight'] ) ? esc_attr($instance['boxHeight']) : '';
+		// Board Width
+		$boxWidth = isset( $instance['boxWidth'] ) ? esc_attr($instance['boxWidth']) : '';
+		// Widget Type Selector
+		$select = isset( $instance['select'] ) ? esc_attr($instance['select']) : '';
+		
 		if ( empty( $select ) )
 			$select = 'pin';
 		?>
