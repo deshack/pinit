@@ -12,6 +12,8 @@
 /*=== SETUP
  *==============================*/
 
+define( 'PINIT_VERSION', '1.0.0' );
+
 // Load text domain
 function pit_text_start() {
 	load_plugin_textdomain( 'pit', false, '/lanuages' );
@@ -23,6 +25,15 @@ function pit_pinit_js() {
 	echo '<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
 }
 add_action( 'wp_head', 'pit_pinit_js' );
+
+// Load Admin scripts.
+function pit_admin_scripts() {
+	$screen = get_current_screen();
+
+	if ( $screen->base == 'widgets' )
+		wp_enqueue_script( 'pinit', plugin_dir_url( __FILE__ ) . 'js/admin.js', array( 'jquery' ), PINIT_VERSION, true );
+}
+add_action( 'admin_enqueue_scripts', 'pit_admin_scripts' );
 
 /*=== SHORTCODES
  *==============================*/
@@ -162,10 +173,7 @@ class pit_pinterest extends WP_Widget {
 		// Board Width
 		$boxWidth = isset( $instance['boxWidth'] ) ? esc_attr($instance['boxWidth']) : '';
 		// Widget Type Selector
-		$select = isset( $instance['select'] ) ? esc_attr($instance['select']) : '';
-		
-		if ( empty( $select ) )
-			$select = 'pin';
+		$select = isset( $instance['select'] ) ? esc_attr($instance['select']) : 'pin';
 		?>
 
 		<p>
@@ -190,42 +198,36 @@ class pit_pinterest extends WP_Widget {
 			<?php endforeach; ?>
 		</ul>
 
-		<p>
+		<p class="pin-control profile-control board-control">
 			<label for="<?php echo $this->get_field_id('purl'); ?>">
-				<?php printf( __( 'Pinterest %1$s URL:', 'pit' ), ucfirst($select) ); ?>
+			<?php foreach ( $options as $option ) : ?>
+				<span class="<?php echo $option; ?>-help"><?php printf( __( 'Pinterest %1$s URL:', 'pit' ), ucfirst( $option ) ); ?></span>
+			<?php endforeach; ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('purl'); ?>" name="<?php echo $this->get_field_name('purl'); ?>" type="text" value="<?php echo $purl; ?>">
 			<br>
-			<small>
-				<?php switch ($select) {
-					case 'profile':
-						echo 'http://www.pinterest.com/username/';
-						break;
-					case 'board':
-						echo 'http://www.pinterest.com/username/boardname/';
-						break;
-					default:
-						echo 'http://www.pinterest.com/pini/pin_id/';
-						break;
-				} ?>
+			<small><?php _e( 'E.g.', 'pit' ); ?>
+				<span class="pin-help">http://www.pinterest.com/pin/<em>pin_id</em>/</span>
+				<span class="profile-help">http://www.pinterest.com/<em>username</em>/</span>
+				<span class="board-help">http://www.pinterest.com/<em>username</em>/<em>boardname</em>/</span>
 			</small>
 		</p>
 
-		<p>
+		<p class="profile-control board-control">
 			<label for="<?php echo $this->get_field_id('imgWidth'); ?>"><?php _e( 'Image Width:', 'pit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('imgWidth'); ?>" name="<?php echo $this->get_field_name('imgWidth'); ?>" type="text" value="<?php echo $imgWidth; ?>" min="60">
 			<br>
 			<small><?php _e( 'min: 60; leave blank for 92', 'pit' ); ?></small>
 		</p>
 
-		<p>
+		<p class="profile-control board-control">
 			<label for="<?php echo $this->get_field_id('boxHeight'); ?>"><?php _e( 'Board Height:', 'pit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('boxHeight'); ?>" name="<?php echo $this->get_field_name('boxHeight'); ?>" type="text" value="<?php echo $boxHeight; ?>" min="60">
 			<br>
 			<small><?php _e( 'min: 60; leave blank for 175', 'pit' ); ?></small>
 		</p>
 
-		<p>
+		<p class="profile-control board-control">
 			<label for="<?php echo $this->get_field_id('boxWidth'); ?>"><?php _e( 'Board Width:', 'pit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('boxWidth'); ?>" name="<?php echo $this->get_field_name('boxWidth'); ?>" type="text" value="<?php echo $boxWidth; ?>" min="130">
 			<br>
