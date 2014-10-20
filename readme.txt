@@ -28,6 +28,7 @@ Languages:
 
  * English
  * Italian
+ * Serbian (credit: [Ogi Djuraskovic](http://firstsiteguide.com/))
 
 == Installation ==
 
@@ -52,6 +53,7 @@ Pinit doesn't need any configuration or options page: you can handle every widge
 * One widget to rule them all
 * Added shortcodes
 * Tested up to WP4.0
+* Added Serbian translation (credit: [Ogi Djuraskovic](http://firstsiteguide.com/))
 
 = 0.3 =
 * Feature: Pin Widget
