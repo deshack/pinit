@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/deshack/pinit
  * Description: Handy plugin that adds Pinterest Follow Button, Pin Widget, Profile Widget and Board Widget to your WordPress site.
  * Author: deshack
- * Version: 1.0
+ * Version: 1.0.1
  * Author URI: http://www.deshack.net
  * License: GPLv2 or later
  */
@@ -12,7 +12,7 @@
 /*=== SETUP
  *==============================*/
 
-define( 'PINIT_VERSION', '1.0.0' );
+define( 'PINIT_VERSION', '1.0.1' );
 
 // Load text domain
 function pit_text_start() {
@@ -20,11 +20,16 @@ function pit_text_start() {
 }
 add_action( 'init', 'pit_text_start' );
 
-// Load the Pinterest JavaScript
+/**
+ * Load Pinterest javascript.
+ *
+ * @since 0.1.0
+ * @since  1.0.1 Moved from wp_head to wp_footer
+ */
 function pit_pinit_js() {
 	echo '<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
 }
-add_action( 'wp_head', 'pit_pinit_js' );
+add_action( 'wp_footer', 'pit_pinit_js', 9999 );
 
 // Load Admin scripts.
 function pit_admin_scripts() {

@@ -4,7 +4,7 @@ Donate link: http://www.deshack.net/donate/
 Tags: pinterest, badge, embedded pin, pin,embed pin, pinterest badge, embedded profile,embed profile, embedded board, embed board, pinterest follow, widgets, widgets pinterest, widget pinterest, sidebar, social network, shortcodes
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -47,6 +47,10 @@ Pinit doesn't need any configuration or options page: you can handle every widge
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.1 =
+* Added Lithuanian translation (credit: [shookees](https://github.com/shookees))
+* JavaScript moved at the end of `wp_footer`
 
 = 1.0 =
 * Completely rewritten code
