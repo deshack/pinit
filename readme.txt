@@ -29,6 +29,7 @@ Languages:
  * English
  * Italian
  * Serbian (credit: [Ogi Djuraskovic](http://firstsiteguide.com/))
+ * Lithuanian (credit: [shookees](https://github.com/shookees))
 
 == Installation ==
 
