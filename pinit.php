@@ -91,7 +91,7 @@ class pit_pinterest extends WP_Widget {
 		parent::__construct(
 			'pit_pinterest', // Base ID
 			__( 'Pinterest (Pinit)', 'pit' ), // Name
-			array( 'description' => __( 'Show Pit, Profile or Board Widget.', 'pit' ) ) // Args
+			array( 'description' => __( 'Show Pin, Profile or Board Widget.', 'pit' ) ) // Args
 		);
 	}
 
