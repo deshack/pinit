@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/deshack/pinit
  * Description: Handy plugin that adds Pinterest Follow Button, Pin Widget, Profile Widget and Board Widget to your WordPress site.
  * Author: deshack
- * Version: 1.0.1
+ * Version: 2.0.0
  * Author URI: http://www.deshack.net
  * License: GPLv2 or later
  */
@@ -12,7 +12,7 @@
 /*=== SETUP
  *==============================*/
 
-define( 'PINIT_VERSION', '1.0.1' );
+define( 'PINIT_VERSION', '2.0.0' );
 
 // Load text domain
 function pit_text_start() {
@@ -27,7 +27,7 @@ add_action( 'init', 'pit_text_start' );
  * @since  1.0.1 Moved from wp_head to wp_footer
  */
 function pit_pinit_js() {
-	echo '<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
+	echo '<script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
 }
 add_action( 'wp_footer', 'pit_pinit_js', 9999 );
 
@@ -43,36 +43,56 @@ add_action( 'admin_enqueue_scripts', 'pit_admin_scripts' );
 /*=== SHORTCODES
  *==============================*/
 
+function pit_follow_shortcode( $atts ) {
+	$atts = extract( shortcode_atts( array(
+		'url' => 'http://www.pinterest.com/pinterest/',
+		'text' => 'Follow',
+	), $atts ) );
+
+	return '<a data-pin-do="buttonFollow" href="' . $url . '">' . $text . '</a>';
+}
+
 function pit_pin_shortcode( $atts ) {
 	$atts = extract( shortcode_atts( array(
 		'url' => 'http://www.pinterest.com/pin/99360735500167749/',
+		'size' => 'small',
 	), $atts ) );
 
-	return '<a data-pin-do="embedPin" href="' . $url . '"></a>';
+	if ($size == 'large' || $size == 'medium') {
+		$width = 'data-pin-width="' . $size . '" ';
+	}
+
+	else {
+		$width = '';
+	}
+	
+
+	return '<a data-pin-do="embedPin" ' . $width . 'href="' . $url . '"></a>';
 }
 
 function pit_profile_shortcode( $atts ) {
 	$atts = extract( shortcode_atts( array(
-		'url' => 'http://www.pinterest.com/pinterest/',
-		'imgWidth' => '92',
-		'boxHeight' => '175',
-		'boxWidth' => 'auto'
+		'url' => 'https://www.pinterest.com/pinterest/',
+		'imgwidth' => '80',
+		'boxheight' => '400',
+		'boxwidth' => '400',
 	), $atts ) );
 
-	return '<a data-pin-do="embedUser" href="' . $url . '" data-pin-scale-width="' . $imgWidth . '" data-pin-scale-height="' . $boxHeight . '" data-pin-board-width="' . $boxWidth . '"></a>';
+	return '<a data-pin-do="embedUser" data-pin-board-width="' . $boxwidth . '" data-pin-scale-height="' . $boxheight . '" data-pin-scale-width="' . $imgwidth . '" href="' . $url . '"></a>';
 }
 
 function pit_board_shortcode( $atts ) {
 	$atts = extract( shortcode_atts( array(
-		'url' => 'http://www.pinterest.com/pinterest/pin-pets/',
-		'imgWidth' => '92',
-		'boxHeight' => '175',
-		'boxWidth' => 'auto'
+		'url' => 'https://www.pinterest.com/pinterest/pin-tips/',
+		'imgwidth' => '80',
+		'boxheight' => '400',
+		'boxwidth' => '400',
 	), $atts ) );
 
-	return '<a data-pin-do="embedBoard" href="' . $url . '" data-pin-scale-width="' . $imgWidth . '" data-pin-scale-height="' . $boxHeight . '" data-pin-board-width="' . $boxWidth . '"></a>';
+	return '<a data-pin-do="embedBoard" data-pin-board-width="' . $boxwidth . '" data-pin-scale-height="' . $boxheight . '" data-pin-scale-width="' . $imgwidth . '" href="' . $url . '"></a>';
 }
 
+add_shortcode( 'pit-follow', 'pit_follow_shortcode' );
 add_shortcode( 'pit-pin', 'pit_pin_shortcode' );
 add_shortcode( 'pit-profile', 'pit_profile_shortcode' );
 add_shortcode( 'pit-board', 'pit_board_shortcode' );
@@ -91,7 +111,7 @@ class pit_pinterest extends WP_Widget {
 		parent::__construct(
 			'pit_pinterest', // Base ID
 			__( 'Pinterest (Pinit)', 'pit' ), // Name
-			array( 'description' => __( 'Show Pin, Profile or Board Widget.', 'pit' ) ) // Args
+			array( 'description' => __( 'Show Pit, Profile or Board Widget.', 'pit' ) ) // Args
 		);
 	}
 
@@ -101,7 +121,7 @@ class pit_pinterest extends WP_Widget {
 	 * @see WP_Widget::widget()
 	 *
 	 * @param array $args. Widget arguments.
-	 * @param rray $instance. Saved values from database.
+	 * @param array $instance. Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
 		extract( $args );
