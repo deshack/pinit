@@ -49,7 +49,7 @@ function pit_follow_shortcode( $atts ) {
 		'text' => 'Follow',
 	), $atts ) );
 
-	return '<a data-pin-do="buttonFollow" href="' . $url . '">' . $text . '</a>';
+	return sprintf('<a data-pin-do="buttonFollow" href="%1$s">%2$s</a>', $url, $text );
 }
 
 function pit_pin_shortcode( $atts ) {
@@ -58,16 +58,9 @@ function pit_pin_shortcode( $atts ) {
 		'size' => 'small',
 	), $atts ) );
 
-	if ($size == 'large' || $size == 'medium') {
-		$width = 'data-pin-width="' . $size . '" ';
-	}
-
-	else {
-		$width = '';
-	}
+	$width = ( $size == 'large' || $size == 'medium' ) ? sprintf( 'data-pin-width="%s" ', $size ) : '';
 	
-
-	return '<a data-pin-do="embedPin" ' . $width . 'href="' . $url . '"></a>';
+	return sprintf( '<a data-pin-do="embedPin" %1$s href="%2$s"></a>', $width, $url );
 }
 
 function pit_profile_shortcode( $atts ) {
@@ -78,7 +71,13 @@ function pit_profile_shortcode( $atts ) {
 		'boxwidth' => '400',
 	), $atts ) );
 
-	return '<a data-pin-do="embedUser" data-pin-board-width="' . $boxwidth . '" data-pin-scale-height="' . $boxheight . '" data-pin-scale-width="' . $imgwidth . '" href="' . $url . '"></a>';
+	return sprintf( 
+		'<a data-pin-do="embedUser" data-pin-board-width="%1$s" data-pin-scale-height="%2$s" data-pin-scale-width="%3$s" href="%4$s"></a>',
+		$boxwidth,
+		$boxheight,
+		$imgwidth,
+		$url
+	);
 }
 
 function pit_board_shortcode( $atts ) {
@@ -89,7 +88,13 @@ function pit_board_shortcode( $atts ) {
 		'boxwidth' => '400',
 	), $atts ) );
 
-	return '<a data-pin-do="embedBoard" data-pin-board-width="' . $boxwidth . '" data-pin-scale-height="' . $boxheight . '" data-pin-scale-width="' . $imgwidth . '" href="' . $url . '"></a>';
+return sprintf(
+		'<a data-pin-do="embedBoard" data-pin-board-width="%1$s" data-pin-scale-height="%2$s" data-pin-scale-width="%3$s" href="%4$s"></a>',
+		$boxwidth,
+		$boxheight,
+		$imgwidth,
+		$url
+	);
 }
 
 add_shortcode( 'pit-follow', 'pit_follow_shortcode' );
