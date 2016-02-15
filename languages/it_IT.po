@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2013-12-18 12:27-0000\n"
-"PO-Revision-Date: 2013-12-18 12:28-0000\n"
+"POT-Creation-Date: 2016-02-15 16:21+0100\n"
+"PO-Revision-Date: 2016-02-15 16:21+0100\n"
 "Last-Translator: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language-Team: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language: it_IT\n"
@@ -14,48 +14,52 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pinit.php:77
+#: ../pinit.php:113
 msgid "Pinterest (Pinit)"
 msgstr "Pinterest (Pinit)"
 
-#: ../pinit.php:78
+#: ../pinit.php:114
 msgid "Show Pit, Profile or Board Widget."
 msgstr "Mostra Widget Pit, Profilo o Bacheca."
 
-#: ../pinit.php:165
+#: ../pinit.php:205
 msgid "Title:"
 msgstr "Titolo:"
 
-#: ../pinit.php:170
+#: ../pinit.php:210
 msgid "Type:"
 msgstr "Tipo:"
 
-#: ../pinit.php:188
+#: ../pinit.php:229
 #, php-format
 msgid "Pinterest %1$s URL:"
 msgstr "URL %1$s Pinterest:"
 
-#: ../pinit.php:208
+#: ../pinit.php:234
+msgid "E.g."
+msgstr "Es."
+
+#: ../pinit.php:242
 msgid "Image Width:"
 msgstr "Larghezza immagine:"
 
-#: ../pinit.php:211
+#: ../pinit.php:245
 msgid "min: 60; leave blank for 92"
 msgstr "min: 60; lasciare vuoto per 92"
 
-#: ../pinit.php:215
+#: ../pinit.php:249
 msgid "Board Height:"
 msgstr "Altezza bacheca:"
 
-#: ../pinit.php:218
+#: ../pinit.php:252
 msgid "min: 60; leave blank for 175"
 msgstr "min: 60; lasciare vuoto per 175"
 
-#: ../pinit.php:222
+#: ../pinit.php:256
 msgid "Board Width:"
 msgstr "Larghezza bacheca:"
 
-#: ../pinit.php:225
+#: ../pinit.php:259
 msgid "min: 130; leave blank for auto"
 msgstr "min: 130; lasciare vuoto per auto"
 
