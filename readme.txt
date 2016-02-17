@@ -1,5 +1,5 @@
 === Pinit: Pinterest for WordPress ===
-Contributors: deshack, codeat, igenius
+Contributors: deshack, codeat, iGenius
 Donate link: http://www.deshack.net/donate/
 Tags: pinterest, badge, embedded pin, pin,embed pin, pinterest badge, embedded profile,embed profile, embedded board, embed board, pinterest follow, widgets, widgets pinterest, widget pinterest, sidebar, social network, shortcodes
 Requires at least: 3.5
