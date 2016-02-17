@@ -4,6 +4,8 @@
  * Plugin URI: https://github.com/deshack/pinit
  * Description: Handy plugin that adds Pinterest Follow Button, Pin Widget, Profile Widget and Board Widget to your WordPress site.
  * Author: deshack
+ * Text Domain: pit
+ * Domain Path: /languages
  * Version: 2.0.0
  * Author URI: http://www.deshack.net
  * License: GPLv2 or later
