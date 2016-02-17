@@ -1,64 +1,64 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2016-02-15 16:22+0100\n"
-"PO-Revision-Date: 2016-02-15 16:22+0100\n"
-"Last-Translator: Mattia Migliorini <deshack@ubuntu.com>\n"
-"Language-Team: deshack <deshack@ubuntu.com>\n"
+"POT-Creation-Date: 2016-02-17 16:57+0100\n"
+"PO-Revision-Date: 2016-02-17 16:58+0100\n"
+"Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
+"Language-Team: deshack, iGenius <deshack@ubuntu.com, eugenio@codeat.it>\n"
 "Language: en_EN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-KeywordsList: __;_e;_x\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pinit.php:113
+#: ../pinit.php:120
 msgid "Pinterest (Pinit)"
-msgstr ""
+msgstr "Pinterest (Pinit)"
 
-#: ../pinit.php:114
+#: ../pinit.php:121
 msgid "Show Pit, Profile or Board Widget."
-msgstr ""
+msgstr "Show Pit, Profile or Board Widget."
 
-#: ../pinit.php:205
+#: ../pinit.php:212
 msgid "Title:"
-msgstr ""
+msgstr "Title:"
 
-#: ../pinit.php:210
+#: ../pinit.php:217
 msgid "Type:"
-msgstr ""
+msgstr "Type:"
 
-#: ../pinit.php:229
+#: ../pinit.php:236
 #, php-format
 msgid "Pinterest %1$s URL:"
-msgstr ""
+msgstr "Pinterest %1$s URL:"
 
-#: ../pinit.php:234
+#: ../pinit.php:241
 msgid "E.g."
-msgstr ""
-
-#: ../pinit.php:242
-msgid "Image Width:"
-msgstr ""
-
-#: ../pinit.php:245
-msgid "min: 60; leave blank for 92"
-msgstr ""
+msgstr "E.g."
 
 #: ../pinit.php:249
-msgid "Board Height:"
-msgstr ""
+msgid "Image Width:"
+msgstr "Image Width:"
 
 #: ../pinit.php:252
-msgid "min: 60; leave blank for 175"
-msgstr ""
+msgid "min: 60; leave blank for 92"
+msgstr "min: 60; leave blank for 80"
 
 #: ../pinit.php:256
-msgid "Board Width:"
-msgstr ""
+msgid "Board Height:"
+msgstr "Board Height:"
 
 #: ../pinit.php:259
+msgid "min: 60; leave blank for 175"
+msgstr "min: 60; leave blank for 400"
+
+#: ../pinit.php:263
+msgid "Board Width:"
+msgstr "Board Width:"
+
+#: ../pinit.php:266
 msgid "min: 130; leave blank for auto"
-msgstr ""
+msgstr "min: 130; leave blank for 400"
