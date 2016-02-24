@@ -19,7 +19,7 @@
 
     <div id="tabs" class="settings-tab">
         <ul>
-            <li><a href="#tabs-1"><?php __( 'Settings', $this->plugin_slug ); ?></a></li>
+            <li><a href="#tabs-1"><?php _e( 'Settings', $this->plugin_slug ); ?></a></li>
         </ul>
         <div id="tabs-1" class="wrap">
             <?php
