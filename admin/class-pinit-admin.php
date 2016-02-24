@@ -77,20 +77,6 @@ class Pinit_Admin {
 		 * https://github.com/WebDevStudios/CMB2
 		 */
 		require_once( plugin_dir_path( __FILE__ ) . '/includes/CMB2/init.php' );
-
-		/*
-		 * Define custom functionality.
-		 *
-		 * Read more about actions and filters:
-		 * http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
-		 */
-
-
-
-
-
-
-
 	}
 
 	/**

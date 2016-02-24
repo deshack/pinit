@@ -39,7 +39,7 @@ class Pinit {
 	 * of text. Its value should match the Text Domain file header in the main
 	 * plugin file.
 	 *
-	 * @since    1.0.0
+	 * @since    2.1.0
 	 *
 	 * @var      string
 	 */
@@ -49,7 +49,7 @@ class Pinit {
 	 * Unique identifier for your plugin.
 	 *
 	 *
-	 * @since    1.0.0
+	 * @since    2.1.0
 	 *
 	 * @var      string
 	 */
@@ -58,18 +58,20 @@ class Pinit {
 	/**
 	 * Instance of this class.
 	 *
-	 * @since    1.0.0
+	 * @since    2.1.0
 	 *
 	 * @var      object
 	 */
 	protected static $instance = null;
+
+	protected $settings = null;
 
 
 	/**
 	 * Initialize the plugin by setting localization and loading public scripts
 	 * and styles.
 	 *
-	 * @since     1.0.0
+	 * @since     2.1.0
 	 */
 	private function __construct() {
 
@@ -83,12 +85,19 @@ class Pinit {
 		add_shortcode( 'pit-pin', array( $this, 'pit_pin_shortcode' ) );
 		add_shortcode( 'pit-profile', array( $this, 'pit_profile_shortcode' ) );
 		add_shortcode( 'pit-board', array( $this, 'pit_board_shortcode' ) );
+		//* Get the General settings
+		$this->settings = get_option( $this->get_plugin_slug() . '-settings' );
+
+		/**
+		 * Register widgets
+		 */
+		add_action( 'widgets_init', create_function('', 'return register_widget( "pit_pinterest" );') );
 	}
 
 	/**
 	 * Return the plugin slug.
 	 *
-	 * @since    1.0.0
+	 * @since    2.1.0
 	 *
 	 * @return    Plugin slug variable.
 	 */
@@ -99,7 +108,7 @@ class Pinit {
 	/**
 	 * Return the plugin name.
 	 *
-	 * @since    1.0.0
+	 * @since    2.1.0
 	 *
 	 * @return    Plugin name variable.
 	 */
@@ -121,7 +130,7 @@ class Pinit {
 	/**
 	 * Return an instance of this class.
 	 *
-	 * @since     1.0.0
+	 * @since     2.1.0
 	 *
 	 * @return    object    A single instance of this class.
 	 */
@@ -135,43 +144,92 @@ class Pinit {
 	}
 
 	/**
-     * Here is where magic happens...
-     * Read the settings and render the proper pinit.js
+     * Print pinit.js
      * 
+     * @since  1.0.0
      * @return string
      */
 
 	public function pit_pinit_js() {
-		if( isset( $this->settings[ 'on_hover' ] )){
-			$yoda = ' data-pin-hover="true"';
 
-			if( isset( $this->settings[ 'round' ] )) {
-				$yoda .= ' data-pin-round="true"';
+		if( !empty( $this->settings[ 'single_post' ] ) && !empty( $this->settings[ 'single_page' ] ) ) {
+			if( is_singular('post') || is_singular('page') && !is_front_page()) {
+				$this->pinit_html_data( true );
 			}
 
-			elseif ( !isset( $this->settings[ 'round' ] )) {
-
-				if( isset( $this->settings[ 'color' ] )){
-					$yoda .= ' data-pin-color="'. $this->settings[ 'color' ] . '"';
-				}
-
-				if( isset( $this->settings[ 'language' ] )){
-					$yoda .= ' data-pin-lang="'. $this->settings[ 'language' ] . '"';
-				}
+			else {
+				$this->pinit_html_data( false );
 			}
-
-			if( isset( $this->settings[ 'large' ] )) {
-				$yoda .= ' data-pin-tall="true"';
-			}
-
-
 		}
+		elseif( !empty( $this->settings[ 'single_page' ] ) && empty( $this->settings[ 'single_post' ] ) ) {
+			if( is_singular('page') && !is_front_page()) {
+				$this->pinit_html_data( true );
+			}
 
+			else {
+				$this->pinit_html_data( false );
+			}
+		}
+		elseif( !empty( $this->settings[ 'single_post' ] ) && empty( $this->settings[ 'single_page' ] ) ) {
+			if( is_singular('post')) {
+				$this->pinit_html_data( true );
+			}
+
+			else {
+				$this->pinit_html_data( false );
+			}
+		}
 		else {
-			$yoda = '';
+			$this->pinit_html_data( true );
 		}
+	}
 
-		echo '<script async defer' . $yoda . ' type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
+
+	/**
+     * Here is where magic happens...
+     * Read the settings and render the proper pinit.js
+     * 
+     * @since 2.1.0
+     * @param bool $active
+     * @return string
+     */
+	public function pinit_html_data( $active ){
+		if ( $active == true ) {
+			if( !empty( $this->settings[ 'on_hover' ] )){
+				$yoda = ' data-pin-hover="true"';
+
+				if( !empty( $this->settings[ 'round' ] )) {
+					$yoda .= ' data-pin-round="true"';
+				}
+
+				else {
+
+					if( isset( $this->settings[ 'color' ] )){
+						$yoda .= ' data-pin-color="'. $this->settings[ 'color' ] . '"';
+					}
+
+					if( isset( $this->settings[ 'language' ] )){
+						$yoda .= ' data-pin-lang="'. $this->settings[ 'language' ] . '"';
+					}
+				}
+
+				if( !empty( $this->settings[ 'large' ] )) {
+					$yoda .= ' data-pin-tall="true"';
+				}
+
+
+			}
+
+			else {
+				$yoda = '';
+			}
+
+			echo '<script async defer' . $yoda . ' type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
+		}
+		else {
+
+			echo '<script async defer type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
+		}
 	}
 
 	/**

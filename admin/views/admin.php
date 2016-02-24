@@ -19,7 +19,7 @@
 
     <div id="tabs" class="settings-tab">
         <ul>
-            <li><a href="#tabs-1"><?php _e( 'Settings' ); ?></a></li>
+            <li><a href="#tabs-1"><?php __( 'Settings', $this->plugin_slug ); ?></a></li>
         </ul>
         <div id="tabs-1" class="wrap">
             <?php
@@ -33,6 +33,18 @@
                 'name' => __( 'Insert Pinit Button on hover', $this->plugin_slug ),
                 'desc' => __('This feature will be activate on EVERY image of your website.', $this->plugin_slug ),
                 'id' => 'on_hover',
+                'type' => 'checkbox',
+            ) );
+            $cmb->add_field( array(
+                'name' => __( 'Buttons in single posts', $this->plugin_slug ),
+                'desc' => __('Activate Pinit buttons in sigle post only (This could be combined with pages)', $this->plugin_slug ),
+                'id' => 'single_post',
+                'type' => 'checkbox',
+            ) );
+            $cmb->add_field( array(
+                'name' => __( 'Buttons in single page', $this->plugin_slug ),
+                'desc' => __('Activate Pinit buttons in sigle pages only (This could be combined with posts)', $this->plugin_slug ),
+                'id' => 'single_page',
                 'type' => 'checkbox',
             ) );
             $cmb->add_field( array(
@@ -68,8 +80,6 @@
             ) );
             cmb2_metabox_form( $this->plugin_slug . '_options', $this->plugin_slug . '-settings' );
             ?>
-
-            <!-- @TODO: Provide other markup for your options page here. -->
         </div>
     </div>
     <!-- Begin MailChimp  -->

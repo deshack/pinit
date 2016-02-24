@@ -17,6 +17,7 @@ This plugin allows you to add Pinterest resources to your site without worrying 
 Features include:
 
 * Automatically place a "Pin it" button on every image
+* Activate Pinit buttons in sigle posts and/or pages only
 * Pinit button Color Select
 * Pinit Button Size Checkbox
 * Pinit Button Layout Checkbox
@@ -54,11 +55,12 @@ Or simply install it from the WordPress Dashboard Plugins section searching for 
 
 == Screenshots ==
 
-1. Pinit Widget
-2. Pinit Pin Shortcode
-3. Pinit Profile Shortcode
-4. Pinit Board Shortcode
-5. Pin It Button on site images
+1. Pinit Settings
+2. Pinit Widget
+3. Pinit Pin Shortcode
+4. Pinit Profile Shortcode
+5. Pinit Board Shortcode
+6. Pin It Button on site images
 
 == Changelog ==
 
@@ -66,11 +68,13 @@ Or simply install it from the WordPress Dashboard Plugins section searching for 
 * Codebase refactored on top of [WordPress-Plugin-Boilerplate-Powered
 ](https://github.com/Mte90/WordPress-Plugin-Boilerplate-Powered)
 * Settings page added
-* Option for Pinit button on images hover
+* Option for enabling Pinit button on images hover
+* Choose if display in single posts and/or pages only
 * Pinit button Color Select
 * Pinit Button Size Checkbox
 * Pinit Button Layout Checkbox
 * Pinit Button for Japanese Language
+* Translation Ready (.pot and textdomains provided)
 
 = 2.0.0 =
 * Size choice for Pin shortcode

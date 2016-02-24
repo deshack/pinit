@@ -9,8 +9,8 @@ class pit_pinterest extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'pit_pinterest', // Base ID
-			__( 'Pinterest (Pinit)', 'pit' ), // Name
-			array( 'description' => __( 'Show Pit, Profile or Board Widget.', 'pit' ) ) // Args
+			__( 'Pinterest (Pinit)', 'pinit' ), // Name
+			array( 'description' => __( 'Show Pit, Profile or Board Widget.', 'pinit' ) ) // Args
 		);
 	}
 
@@ -101,12 +101,12 @@ class pit_pinterest extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'pit' ); ?></label>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'pinit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>">
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('select'); ?>"><?php _e( 'Type:', 'pit' ); ?></label>
+			<label for="<?php echo $this->get_field_id('select'); ?>"><?php _e( 'Type:', 'pinit' ); ?></label>
 		</p>
 		<ul>
 			<?php $options = array( 'pin', 'profile', 'board' );
@@ -125,12 +125,12 @@ class pit_pinterest extends WP_Widget {
 		<p class="pin-control profile-control board-control">
 			<label for="<?php echo $this->get_field_id('purl'); ?>">
 			<?php foreach ( $options as $option ) : ?>
-				<span class="<?php echo $option; ?>-help"><?php printf( __( 'Pinterest %1$s URL:', 'pit' ), ucfirst( $option ) ); ?></span>
+				<span class="<?php echo $option; ?>-help"><?php printf( __( 'Pinterest %1$s URL:', 'pinit' ), ucfirst( $option ) ); ?></span>
 			<?php endforeach; ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('purl'); ?>" name="<?php echo $this->get_field_name('purl'); ?>" type="text" value="<?php echo $purl; ?>">
 			<br>
-			<small><?php _e( 'E.g.', 'pit' ); ?>
+			<small><?php _e( 'E.g.', 'pinit' ); ?>
 				<span class="pin-help">http://www.pinterest.com/pin/<em>pin_id</em>/</span>
 				<span class="profile-help">http://www.pinterest.com/<em>username</em>/</span>
 				<span class="board-help">http://www.pinterest.com/<em>username</em>/<em>boardname</em>/</span>
@@ -138,24 +138,24 @@ class pit_pinterest extends WP_Widget {
 		</p>
 
 		<p class="profile-control board-control">
-			<label for="<?php echo $this->get_field_id('imgWidth'); ?>"><?php _e( 'Image Width:', 'pit' ); ?></label>
+			<label for="<?php echo $this->get_field_id('imgWidth'); ?>"><?php _e( 'Image Width:', 'pinit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('imgWidth'); ?>" name="<?php echo $this->get_field_name('imgWidth'); ?>" type="text" value="<?php echo $imgWidth; ?>" min="60">
 			<br>
-			<small><?php _e( 'min: 60; leave blank for 92', 'pit' ); ?></small>
+			<small><?php _e( 'min: 60; leave blank for 80', 'pinit' ); ?></small>
 		</p>
 
 		<p class="profile-control board-control">
-			<label for="<?php echo $this->get_field_id('boxHeight'); ?>"><?php _e( 'Board Height:', 'pit' ); ?></label>
+			<label for="<?php echo $this->get_field_id('boxHeight'); ?>"><?php _e( 'Board Height:', 'pinit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('boxHeight'); ?>" name="<?php echo $this->get_field_name('boxHeight'); ?>" type="text" value="<?php echo $boxHeight; ?>" min="60">
 			<br>
-			<small><?php _e( 'min: 60; leave blank for 175', 'pit' ); ?></small>
+			<small><?php _e( 'min: 60; leave blank for 400', 'pinit' ); ?></small>
 		</p>
 
 		<p class="profile-control board-control">
-			<label for="<?php echo $this->get_field_id('boxWidth'); ?>"><?php _e( 'Board Width:', 'pit' ); ?></label>
+			<label for="<?php echo $this->get_field_id('boxWidth'); ?>"><?php _e( 'Board Width:', 'pinit' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('boxWidth'); ?>" name="<?php echo $this->get_field_name('boxWidth'); ?>" type="text" value="<?php echo $boxWidth; ?>" min="130">
 			<br>
-			<small><?php _e( 'min: 130; leave blank for auto', 'pit' ); ?></small>
+			<small><?php _e( 'min: 130; leave blank for 400', 'pinit' ); ?></small>
 		</p>
 
 		<?php
@@ -181,8 +181,3 @@ class pit_pinterest extends WP_Widget {
 		return $instance;
 	}
 }
-
-/**
- * Register widgets
- */
-add_action( 'widgets_init', create_function('', 'return register_widget( "pit_pinterest" );') );

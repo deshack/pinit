@@ -34,6 +34,9 @@
 	color:#000;
 	background:#efefef !important;
 }
+.ui-tabs-panel {
+	min-height: 500px;
+}
 .metabox-holder .postbox{
 	max-width:100%;
 }
@@ -54,6 +57,8 @@
     margin: 0;
     background: #4E3A4C;
     padding: 20px 14px;
+    display: block;
+	text-align: center;
 }
 .metabox-holder .postbox.codeat .inside a img {
 	margin-bottom: 16px;
