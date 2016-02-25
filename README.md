@@ -1,10 +1,10 @@
 # Pinit: Pinterest for WordPress #
-**Contributors:** deshack, codeat, igenius  
+**Contributors:** deshack, codeat, iGenius  
 **Donate link:** http://www.deshack.net/donate/  
 **Tags:** pinterest, badge, embedded pin, pin,embed pin, pinterest badge, embedded profile,embed profile, embedded board, embed board, pinterest follow, widgets, widgets pinterest, widget pinterest, sidebar, social network, shortcodes  
 **Requires at least:** 3.5  
 **Tested up to:** 4.4  
-**Stable tag:** 2.0.0  
+**Stable tag:** 2.1.0  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.txt  
 
@@ -16,23 +16,30 @@ This plugin allows you to add Pinterest resources to your site without worrying 
 
 Features include:
 
- * Automatically place a "Pin it" button on every image
+* Automatically place a "Pin it" button on every image
+* Activate Pinit buttons in sigle posts and/or pages only
+* Pinit button Color Select
+* Pinit Button Size Checkbox
+* Pinit Button Layout Checkbox
+* Pinit Button for Japanese Language
 
- * Pin Widget
- * Profile Widget
- * Board Widget
+* Pin Widget
+* Profile Widget
+* Board Widget
 
- * Pin Shortcode [pit-pin]
- * Profile Shortcode [pit-profile]
- * Board Shortcode [pit-board]
- * Follow Shortcode [pit-follow]
+* Pin Shortcode [pit-pin]
+* Profile Shortcode [pit-profile]
+* Board Shortcode [pit-board]
+* Follow Shortcode [pit-follow]
 
 Languages:
 
- * English
- * Italian
- * Serbian (credit: [Ogi Djuraskovic](http://firstsiteguide.com/))
- * Lithuanian (credit: [shookees](https://github.com/shookees))
+* English
+* Italian
+* Spanish (credit: Lucrezia Argentino)
+* Portuguese (credit: Lucrezia Argentino)
+* Serbian (credit: [Ogi Djuraskovic](http://firstsiteguide.com/))
+* Lithuanian (credit: [shookees](https://github.com/shookees))
 
 [Demo](http://codeat.co/pinit/) - [Shortcode Docs](http://codeat.co/pinit/simple-shortcodes/) - [GitHub](https://github.com/deshack/pinit)
 
@@ -46,29 +53,40 @@ Or simply install it from the WordPress Dashboard Plugins section searching for 
 
 ## Frequently Asked Questions ##
 
-### I installed and activated the plugin, but I can't see any configuration page. ###
-
-Pinit doesn't need any configuration or options page: you can handle every widget directly. Just go under Appearance > Widgets and add your Pinit Widgets to the preferred sidebar or use one of the provided shortcodes directly into your content.
-
 ## Screenshots ##
 
-### 1. Pinit Widget ###
-![1. Pinit Widget](/assets/screenshot-1.png)
+### 1. Pinit Settings ###
+![1. Pinit Settings](/assets/screenshot-1.png)
 
-### 2. Pinit Pin Shortcode ###
-![2. Pinit Pin Shortcode](/assets/screenshot-2.png)
+### 2. Pinit Widget ###
+![2. Pinit Widget](/assets/screenshot-2.png)
 
-### 3. Pinit Profile Shortcode ###
-![3. Pinit Profile Shortcode](/assets/screenshot-3.png)
+### 3. Pinit Pin Shortcode ###
+![3. Pinit Pin Shortcode](/assets/screenshot-3.png)
 
-### 4. Pinit Board Shortcode ###
-![4. Pinit Board Shortcode](/assets/screenshot-4.png)
+### 4. Pinit Profile Shortcode ###
+![4. Pinit Profile Shortcode](/assets/screenshot-4.png)
 
-### 5. Pin It Button on site images ###
-![5. Pin It Button on site images](/assets/screenshot-5.png)
+### 5. Pinit Board Shortcode ###
+![5. Pinit Board Shortcode](/assets/screenshot-5.png)
+
+### 6. Pin It Button on site images ###
+![6. Pin It Button on site images](/assets/screenshot-6.png)
 
 
 ## Changelog ##
+
+### 2.1.0 ###
+* Codebase refactored on top of [WordPress-Plugin-Boilerplate-Powered
+](https://github.com/Mte90/WordPress-Plugin-Boilerplate-Powered)
+* Settings page added
+* Option for enabling Pinit button on images hover
+* Choose if display in single posts and/or pages only
+* Pinit button Color Select
+* Pinit Button Size Checkbox
+* Pinit Button Layout Checkbox
+* Pinit Button for Japanese Language
+* Translation Ready (.pot and textdomains provided)
 
 ### 2.0.0 ###
 * Size choice for Pin shortcode

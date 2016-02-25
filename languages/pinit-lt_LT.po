@@ -1,0 +1,161 @@
+# Paulius Šukys <paul.sukys@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pinit\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/plugins/pinit\n"
+"POT-Creation-Date: 2016-02-24 15:12+0100\n"
+"PO-Revision-Date: 2016-02-24 15:12+0100\n"
+"Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
+"Language-Team: deshack <deshack@ubuntu.com>\n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: admin/class-pinit-admin.php:170
+msgid "Pinit Settings"
+msgstr ""
+
+#: admin/class-pinit-admin.php:176
+msgid "Pinit"
+msgstr "Pinit"
+
+#: admin/class-pinit-admin.php:196 admin/views/admin.php:22
+msgid "Settings"
+msgstr ""
+
+#: admin/views/admin.php:33
+msgid "Insert Pinit Button on hover"
+msgstr ""
+
+#: admin/views/admin.php:34
+msgid "This feature will be activate on EVERY image of your website."
+msgstr ""
+
+#: admin/views/admin.php:39
+msgid "Buttons in single posts"
+msgstr ""
+
+#: admin/views/admin.php:40
+msgid ""
+"Activate Pinit buttons in sigle post only (This could be combined with pages)"
+msgstr ""
+
+#: admin/views/admin.php:45
+msgid "Buttons in single page"
+msgstr ""
+
+#: admin/views/admin.php:46
+msgid ""
+"Activate Pinit buttons in sigle pages only (This could be combined with "
+"posts)"
+msgstr ""
+
+#: admin/views/admin.php:51
+msgid "Round Button"
+msgstr ""
+
+#: admin/views/admin.php:56
+msgid "Large Button"
+msgstr ""
+
+#: admin/views/admin.php:61
+msgid "Button Color"
+msgstr ""
+
+#: admin/views/admin.php:62 admin/views/admin.php:73
+msgid "Useless if round buttons are active"
+msgstr ""
+
+#: admin/views/admin.php:66
+msgid "Red"
+msgstr ""
+
+#: admin/views/admin.php:67
+msgid "Gray"
+msgstr ""
+
+#: admin/views/admin.php:68
+msgid "White"
+msgstr ""
+
+#: admin/views/admin.php:72
+msgid "Language"
+msgstr ""
+
+#: admin/views/admin.php:77
+msgid "English"
+msgstr ""
+
+#: admin/views/admin.php:78
+msgid "Japanese"
+msgstr ""
+
+#: admin/views/admin.php:88
+msgid "Codeat Newsletter"
+msgstr ""
+
+#: admin/views/admin.php:119
+msgid "Follow us"
+msgstr ""
+
+#: admin/views/admin.php:130
+msgid "A Codeat Plugin"
+msgstr ""
+
+#: includes/widgets/widgets.php:12
+msgid "Pinterest (Pinit)"
+msgstr "Pinterest (Pinit)"
+
+#: includes/widgets/widgets.php:13
+msgid "Show Pit, Profile or Board Widget."
+msgstr "Rodyti Pit valdiklį, profilį arba skelbimų lentą."
+
+#: includes/widgets/widgets.php:104
+msgid "Title:"
+msgstr "Pavadinimas:"
+
+#: includes/widgets/widgets.php:109
+msgid "Type:"
+msgstr "Tipas:"
+
+#: includes/widgets/widgets.php:128
+#, php-format
+msgid "Pinterest %1$s URL:"
+msgstr "Pinterest %1$s URL:"
+
+#: includes/widgets/widgets.php:133
+msgid "E.g."
+msgstr ""
+
+#: includes/widgets/widgets.php:141
+msgid "Image Width:"
+msgstr "Paveikslėlio plotis:"
+
+#: includes/widgets/widgets.php:144
+msgid "min: 60; leave blank for 80"
+msgstr "min: 60; palikus tuščią bus 80"
+
+#: includes/widgets/widgets.php:148
+msgid "Board Height:"
+msgstr "Skelbimų lentos aukštis:"
+
+#: includes/widgets/widgets.php:151
+msgid "min: 60; leave blank for 400"
+msgstr "min: 60; palikus tuščią bus 400"
+
+#: includes/widgets/widgets.php:155
+msgid "Board Width:"
+msgstr "Skelbimų lentos plotis:"
+
+#: includes/widgets/widgets.php:158
+msgid "min: 130; leave blank for 400"
+msgstr "min: 130; palikus tuščią bus 400"
+
+#~ msgid "min: 60; leave blank for 175"
+#~ msgstr "min: 60; palikus tuščią bus 400"
