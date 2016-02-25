@@ -21,18 +21,19 @@ This plugin allows you to add Pinterest resources to your site without worrying 
 * Pinit Button Size Checkbox
 * Pinit Button Layout Checkbox
 * Pinit Button for Japanese Language
+
 **Widgets:**
 * Pin Widget
 * Profile Widget
 * Board Widget
+
 **Shortcodes:**
 * Pin Shortcode [pit-pin]
 * Profile Shortcode [pit-profile]
 * Board Shortcode [pit-board]
 * Follow Shortcode [pit-follow]
 
-Languages:
-
+**Languages:**
 * English
 * Italian
 * Spanish (credit: Lucrezia Argentino)
