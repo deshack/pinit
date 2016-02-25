@@ -14,19 +14,18 @@ Place Pinterest Buttons, Pins, Boards and Profiles everywhere in you WordPress u
 
 This plugin allows you to add Pinterest resources to your site without worrying about codes. Every image of your website will be automagically pinnable on hover.
 
-Features include:
-
+**Features include:**
 * Automatically place a "Pin it" button on every image
 * Activate Pinit buttons in sigle posts and/or pages only
 * Pinit button Color Select
 * Pinit Button Size Checkbox
 * Pinit Button Layout Checkbox
 * Pinit Button for Japanese Language
-
+**Widgets:**
 * Pin Widget
 * Profile Widget
 * Board Widget
-
+**Shortcodes:**
 * Pin Shortcode [pit-pin]
 * Profile Shortcode [pit-profile]
 * Board Shortcode [pit-board]
