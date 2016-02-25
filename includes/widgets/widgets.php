@@ -1,6 +1,6 @@
 <?php
 /**
- * Pinterest Profile Widget Class
+ * Pinit: Pinterest Widget Class
  *
  * @since 0.1
  */

@@ -1,10 +1,7 @@
 <?php
 
 /**
- * The WordPress Plugin Boilerplate.
- *
- * A foundation off of which to build well-documented WordPress plugins that
- * also follow WordPress Coding Standards and PHP best practices.
+ * Pinit: Pinterest for WordPress
  *
  * @package   Pinit
  * @author    Eugenio Petullà <support@codeat.co>
@@ -23,7 +20,6 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages
- * WordPress-Plugin-Boilerplate-Powered: v1.1.7
  */
 
 // If this file is called directly, abort.

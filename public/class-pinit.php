@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Pinit.
+ * Pinit: Pinterest for WordPress
  *
  * @package   Pinit
  * @author    Eugenio Petullà <support@codeat.co>
