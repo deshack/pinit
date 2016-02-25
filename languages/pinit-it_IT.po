@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
-"POT-Creation-Date: 2016-02-17 16:59+0100\n"
-"PO-Revision-Date: 2016-02-17 16:59+0100\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/plugins/pinit\n"
+"POT-Creation-Date: 2016-02-24 15:04+0100\n"
+"PO-Revision-Date: 2016-02-24 15:11+0100\n"
 "Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
 "Language-Team: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language: it_IT\n"
@@ -14,54 +15,152 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pinit.php:120
+#: admin/class-pinit-admin.php:170
+msgid "Pinit Settings"
+msgstr "Impostazioni Pinit"
+
+#: admin/class-pinit-admin.php:176
+msgid "Pinit"
+msgstr "Pinit"
+
+#: admin/class-pinit-admin.php:196 admin/views/admin.php:22
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: admin/views/admin.php:33
+msgid "Insert Pinit Button on hover"
+msgstr "Inserisci il bottone Pinit passando sulle immagini"
+
+#: admin/views/admin.php:34
+msgid "This feature will be activate on EVERY image of your website."
+msgstr "Questa opzione verra ativata su ogni immagine del tuo sito."
+
+#: admin/views/admin.php:39
+msgid "Buttons in single posts"
+msgstr "Bottoni nei singoli articoli"
+
+#: admin/views/admin.php:40
+msgid ""
+"Activate Pinit buttons in sigle post only (This could be combined with pages)"
+msgstr ""
+"Attiva i bottoni Pinit esclusivamente nei singoli articoli (Può essere "
+"combinata con le pagine)"
+
+#: admin/views/admin.php:45
+msgid "Buttons in single page"
+msgstr "Bottoni nelle singole pagine"
+
+#: admin/views/admin.php:46
+msgid ""
+"Activate Pinit buttons in sigle pages only (This could be combined with "
+"posts)"
+msgstr ""
+"Attiva i bottoni Pinit esclusivamente nelle singole pagine (Può essere "
+"combinata con gli articoli)"
+
+#: admin/views/admin.php:51
+msgid "Round Button"
+msgstr "Bottone Tondo"
+
+#: admin/views/admin.php:56
+msgid "Large Button"
+msgstr "Bottone Grande"
+
+#: admin/views/admin.php:61
+msgid "Button Color"
+msgstr "Colore Bottone"
+
+#: admin/views/admin.php:62 admin/views/admin.php:73
+msgid "Useless if round buttons are active"
+msgstr "È inutile se i bottoni tondi sono attivi"
+
+#: admin/views/admin.php:66
+msgid "Red"
+msgstr "Rosso"
+
+#: admin/views/admin.php:67
+msgid "Gray"
+msgstr "Grigio"
+
+#: admin/views/admin.php:68
+msgid "White"
+msgstr "Bianco"
+
+#: admin/views/admin.php:72
+msgid "Language"
+msgstr "Lingua"
+
+#: admin/views/admin.php:77
+msgid "English"
+msgstr "Inglese"
+
+#: admin/views/admin.php:78
+msgid "Japanese"
+msgstr "Giapponese"
+
+#: admin/views/admin.php:88
+msgid "Codeat Newsletter"
+msgstr "Iscriviti alla Newsletter"
+
+#: admin/views/admin.php:119
+msgid "Follow us"
+msgstr "Seguici sui social"
+
+#: admin/views/admin.php:130
+msgid "A Codeat Plugin"
+msgstr "Un plugin di Codeat"
+
+#: includes/widgets/widgets.php:12
 msgid "Pinterest (Pinit)"
 msgstr "Pinterest (Pinit)"
 
-#: ../pinit.php:121
+#: includes/widgets/widgets.php:13
 msgid "Show Pit, Profile or Board Widget."
 msgstr "Mostra Widget Pit, Profilo o Bacheca."
 
-#: ../pinit.php:212
+#: includes/widgets/widgets.php:104
 msgid "Title:"
 msgstr "Titolo:"
 
-#: ../pinit.php:217
+#: includes/widgets/widgets.php:109
 msgid "Type:"
 msgstr "Tipo:"
 
-#: ../pinit.php:236
+#: includes/widgets/widgets.php:128
 #, php-format
 msgid "Pinterest %1$s URL:"
 msgstr "URL %1$s Pinterest:"
 
-#: ../pinit.php:241
+#: includes/widgets/widgets.php:133
 msgid "E.g."
 msgstr "Es."
 
-#: ../pinit.php:249
+#: includes/widgets/widgets.php:141
 msgid "Image Width:"
 msgstr "Larghezza immagine:"
 
-#: ../pinit.php:252
-msgid "min: 60; leave blank for 92"
+#: includes/widgets/widgets.php:144
+msgid "min: 60; leave blank for 80"
 msgstr "min: 60; lasciare vuoto per 80"
 
-#: ../pinit.php:256
+#: includes/widgets/widgets.php:148
 msgid "Board Height:"
 msgstr "Altezza bacheca:"
 
-#: ../pinit.php:259
-msgid "min: 60; leave blank for 175"
-msgstr "min: 60; lasciare vuoto per 400"
+#: includes/widgets/widgets.php:151
+msgid "min: 60; leave blank for 400"
+msgstr "min: 60; lasciare vuoto per 80"
 
-#: ../pinit.php:263
+#: includes/widgets/widgets.php:155
 msgid "Board Width:"
 msgstr "Larghezza bacheca:"
 
-#: ../pinit.php:266
-msgid "min: 130; leave blank for auto"
+#: includes/widgets/widgets.php:158
+msgid "min: 130; leave blank for 400"
 msgstr "min: 130; lasciare vuoto per 400"
+
+#~ msgid "min: 60; leave blank for 175"
+#~ msgstr "min: 60; lasciare vuoto per 400"
 
 #~ msgid "Pinterest Profile Widget"
 #~ msgstr "Widget Profilo Pinterest"
