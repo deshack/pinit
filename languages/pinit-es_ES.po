@@ -2,9 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/pinit\n"
-"POT-Creation-Date: 2016-02-24 15:18+0100\n"
-"PO-Revision-Date: 2016-02-25 00:24+0100\n"
+"POT-Creation-Date: 2016-02-27 00:50+0100\n"
+"PO-Revision-Date: 2016-02-27 00:51+0100\n"
+"Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
 "Language-Team: Lucrezia Argentino <lucrezia.argentino@gmail.com>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,8 +14,6 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
-"Language: es_ES\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: admin/class-pinit-admin.php:170
@@ -33,31 +33,28 @@ msgid "Insert Pinit Button on hover"
 msgstr "Insertar del botón Pinit al pasar el puntero"
 
 #: admin/views/admin.php:34
-msgid "This feature will be activate on EVERY image of your website."
+msgid "This feature will be activated on EVERY image of your website."
 msgstr "Esta función se activará en cada imagen de su website."
 
 #: admin/views/admin.php:39
-msgid "Buttons in single posts"
-msgstr "Botón en entrada unica"
+msgid "Activate Pinit buttons in single post"
+msgstr "Activa botón en entrada unica"
 
 #: admin/views/admin.php:40
 msgid ""
-"Activate Pinit buttons in sigle post only (This could be combined with pages)"
+"This can be combined with pages and prevent activation in other post types, "
+"archives and frontpage."
 msgstr ""
-"Activar botones de Pinit sólo en entradas unicas (esto podría combinarse con "
-"páginas)"
 
 #: admin/views/admin.php:45
-msgid "Buttons in single page"
-msgstr "Botón en una página individual"
+msgid "Activate Pinit buttons in single pages"
+msgstr "Activa botón en una página individual"
 
 #: admin/views/admin.php:46
 msgid ""
-"Activate Pinit buttons in sigle pages only (This could be combined with "
-"posts)"
+"This can be combined with post and prevent activation in other post types, "
+"archives and frontpage."
 msgstr ""
-"Activar botones de Pinit sólo en paginas unicas (esto podría combinarse con "
-"entradas)"
 
 #: admin/views/admin.php:51
 msgid "Round Button"
@@ -72,7 +69,7 @@ msgid "Button Color"
 msgstr "Color de botón"
 
 #: admin/views/admin.php:62 admin/views/admin.php:73
-msgid "Useless if round buttons are active"
+msgid "Useless if round button setting is active"
 msgstr "Inútil si botones redondos son activos"
 
 #: admin/views/admin.php:66
@@ -160,14 +157,28 @@ msgstr "Anchura del tablero:"
 msgid "min: 130; leave blank for 400"
 msgstr "min: 130; deje en blanco para 400"
 
-msgid "min: 60; leave blank for 175"
-msgstr "min: 60; deje en blanco para 400"
+#~ msgid ""
+#~ "Activate Pinit buttons in sigle post only (This could be combined with "
+#~ "pages)"
+#~ msgstr ""
+#~ "Activar botones de Pinit sólo en entradas unicas (esto podría combinarse "
+#~ "con páginas)"
 
-msgid "Pinterest Profile Widget"
-msgstr "Widget Perfil de Pinterest"
+#~ msgid ""
+#~ "Activate Pinit buttons in sigle pages only (This could be combined with "
+#~ "posts)"
+#~ msgstr ""
+#~ "Activar botones de Pinit sólo en paginas unicas (esto podría combinarse "
+#~ "con entradas)"
 
-msgid "Show up to 30 of your latest pins on your site."
-msgstr "Mostra fino a 30 dei tuoi pin recenti nel tuo sito."
+#~ msgid "min: 60; leave blank for 175"
+#~ msgstr "min: 60; deje en blanco para 400"
 
-msgid "Show up to 30 of your favorite board's latest pins."
-msgstr "Mostra fino a 30 dei pin recenti dalla tua bacheca preferita."
+#~ msgid "Pinterest Profile Widget"
+#~ msgstr "Widget Perfil de Pinterest"
+
+#~ msgid "Show up to 30 of your latest pins on your site."
+#~ msgstr "Mostra fino a 30 dei tuoi pin recenti nel tuo sito."
+
+#~ msgid "Show up to 30 of your favorite board's latest pins."
+#~ msgstr "Mostra fino a 30 dei pin recenti dalla tua bacheca preferita."

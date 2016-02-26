@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/pinit\n"
-"POT-Creation-Date: 2016-02-24 14:55+0100\n"
+"POT-Creation-Date: 2016-02-27 00:45+0100\n"
 "PO-Revision-Date: 2014-07-07 18:52+0100\n"
 "Last-Translator: Mte90 <mte90net@gmail.com>\n"
 "Language-Team: Eugenio Petullà <support@codeat.co>\n"
@@ -41,26 +41,27 @@ msgid "Insert Pinit Button on hover"
 msgstr ""
 
 #: admin/views/admin.php:34
-msgid "This feature will be activate on EVERY image of your website."
+msgid "This feature will be activated on EVERY image of your website."
 msgstr ""
 
 #: admin/views/admin.php:39
-msgid "Buttons in single posts"
+msgid "Activate Pinit buttons in single post"
 msgstr ""
 
 #: admin/views/admin.php:40
 msgid ""
-"Activate Pinit buttons in sigle post only (This could be combined with pages)"
+"This can be combined with pages and prevent activation in other post types, "
+"archives and frontpage."
 msgstr ""
 
 #: admin/views/admin.php:45
-msgid "Buttons in single page"
+msgid "Activate Pinit buttons in single pages"
 msgstr ""
 
 #: admin/views/admin.php:46
 msgid ""
-"Activate Pinit buttons in sigle pages only (This could be combined with "
-"posts)"
+"This can be combined with post and prevent activation in other post types, "
+"archives and frontpage."
 msgstr ""
 
 #: admin/views/admin.php:51
@@ -76,7 +77,7 @@ msgid "Button Color"
 msgstr ""
 
 #: admin/views/admin.php:62 admin/views/admin.php:73
-msgid "Useless if round buttons are active"
+msgid "Useless if round button setting is active"
 msgstr ""
 
 #: admin/views/admin.php:66

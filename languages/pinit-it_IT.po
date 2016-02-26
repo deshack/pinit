@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pinit\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/pinit\n"
-"POT-Creation-Date: 2016-02-24 15:04+0100\n"
-"PO-Revision-Date: 2016-02-24 15:11+0100\n"
+"POT-Creation-Date: 2016-02-27 00:46+0100\n"
+"PO-Revision-Date: 2016-02-27 00:49+0100\n"
 "Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
 "Language-Team: Mattia Migliorini <deshack@ubuntu.com>\n"
 "Language: it_IT\n"
@@ -32,31 +32,32 @@ msgid "Insert Pinit Button on hover"
 msgstr "Inserisci il bottone Pinit passando sulle immagini"
 
 #: admin/views/admin.php:34
-msgid "This feature will be activate on EVERY image of your website."
+msgid "This feature will be activated on EVERY image of your website."
 msgstr "Questa opzione verra ativata su ogni immagine del tuo sito."
 
 #: admin/views/admin.php:39
-msgid "Buttons in single posts"
-msgstr "Bottoni nei singoli articoli"
+msgid "Activate Pinit buttons in single post"
+msgstr "Attiva i bottoni nei singoli articoli"
 
 #: admin/views/admin.php:40
 msgid ""
-"Activate Pinit buttons in sigle post only (This could be combined with pages)"
+"This can be combined with pages and prevent activation in other post types, "
+"archives and frontpage."
 msgstr ""
-"Attiva i bottoni Pinit esclusivamente nei singoli articoli (Può essere "
-"combinata con le pagine)"
+"Questa impostazione può essere combinata con quella delle pagine e serve a "
+"impedire l'inserimento dei bottoni negli archivi o sulla Home"
 
 #: admin/views/admin.php:45
-msgid "Buttons in single page"
-msgstr "Bottoni nelle singole pagine"
+msgid "Activate Pinit buttons in single pages"
+msgstr "Attiva i bottoni nelle singole pagine"
 
 #: admin/views/admin.php:46
 msgid ""
-"Activate Pinit buttons in sigle pages only (This could be combined with "
-"posts)"
+"This can be combined with post and prevent activation in other post types, "
+"archives and frontpage."
 msgstr ""
-"Attiva i bottoni Pinit esclusivamente nelle singole pagine (Può essere "
-"combinata con gli articoli)"
+"Questa impostazione può essere combinata con quella degli articoli e serve "
+"a impedire l'inserimento dei bottoni negli archivi o sulla Home"
 
 #: admin/views/admin.php:51
 msgid "Round Button"
@@ -71,7 +72,7 @@ msgid "Button Color"
 msgstr "Colore Bottone"
 
 #: admin/views/admin.php:62 admin/views/admin.php:73
-msgid "Useless if round buttons are active"
+msgid "Useless if round button setting is active"
 msgstr "È inutile se i bottoni tondi sono attivi"
 
 #: admin/views/admin.php:66
@@ -158,6 +159,20 @@ msgstr "Larghezza bacheca:"
 #: includes/widgets/widgets.php:158
 msgid "min: 130; leave blank for 400"
 msgstr "min: 130; lasciare vuoto per 400"
+
+#~ msgid ""
+#~ "Activate Pinit buttons in sigle post only (This could be combined with "
+#~ "pages)"
+#~ msgstr ""
+#~ "Attiva i bottoni Pinit esclusivamente nei singoli articoli (Può essere "
+#~ "combinata con le pagine)"
+
+#~ msgid ""
+#~ "Activate Pinit buttons in sigle pages only (This could be combined with "
+#~ "posts)"
+#~ msgstr ""
+#~ "Attiva i bottoni Pinit esclusivamente nelle singole pagine (Può essere "
+#~ "combinata con gli articoli)"
 
 #~ msgid "min: 60; leave blank for 175"
 #~ msgstr "min: 60; lasciare vuoto per 400"
