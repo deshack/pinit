@@ -31,19 +31,19 @@
                     ) );
             $cmb->add_field( array(
                 'name' => __( 'Insert Pinit Button on hover', $this->plugin_slug ),
-                'desc' => __('This feature will be activate on EVERY image of your website.', $this->plugin_slug ),
+                'desc' => __('This feature will be activated on EVERY image of your website.', $this->plugin_slug ),
                 'id' => 'on_hover',
                 'type' => 'checkbox',
             ) );
             $cmb->add_field( array(
-                'name' => __( 'Buttons in single posts', $this->plugin_slug ),
-                'desc' => __('Activate Pinit buttons in sigle post only (This could be combined with pages)', $this->plugin_slug ),
+                'name' => __( 'Activate Pinit buttons in single post', $this->plugin_slug ),
+                'desc' => __('This can be combined with pages and prevent activation in other post types, archives and frontpage.', $this->plugin_slug ),
                 'id' => 'single_post',
                 'type' => 'checkbox',
             ) );
             $cmb->add_field( array(
-                'name' => __( 'Buttons in single page', $this->plugin_slug ),
-                'desc' => __('Activate Pinit buttons in sigle pages only (This could be combined with posts)', $this->plugin_slug ),
+                'name' => __( 'Activate Pinit buttons in single pages', $this->plugin_slug ),
+                'desc' => __('This can be combined with post and prevent activation in other post types, archives and frontpage.', $this->plugin_slug ),
                 'id' => 'single_page',
                 'type' => 'checkbox',
             ) );
@@ -59,7 +59,7 @@
             ) );
             $cmb->add_field( array(
                 'name' => __( 'Button Color', $this->plugin_slug ),
-                'desc' => __('Useless if round buttons are active', $this->plugin_slug ),
+                'desc' => __('Useless if round button setting is active', $this->plugin_slug ),
                 'id' => 'color',
                 'type' => 'select',
                 'options' => array(
@@ -70,7 +70,7 @@
             ) );
             $cmb->add_field( array(
                 'name' => __( 'Language', $this->plugin_slug ),
-                'desc' => __('Useless if round buttons are active', $this->plugin_slug ),
+                'desc' => __('Useless if round button setting is active', $this->plugin_slug ),
                 'id' => 'language',
                 'type' => 'select',
                 'options' => array(
