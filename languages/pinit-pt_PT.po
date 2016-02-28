@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pinit\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/plugins/pinit\n"
+"POT-Creation-Date: 2016-02-27 00:51+0100\n"
+"PO-Revision-Date: 2016-02-27 00:52+0100\n"
+"Last-Translator: Eugenio Petullà <eugeniopetulla@yahoo.it>\n"
+"Language-Team: Lucrezia Argentino <lucrezia.argentino@gmail.com>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: admin/class-pinit-admin.php:170
+msgid "Pinit Settings"
+msgstr "Configurações Pinit"
+
+#: admin/class-pinit-admin.php:176
+msgid "Pinit"
+msgstr "Pinit"
+
+#: admin/class-pinit-admin.php:196 admin/views/admin.php:22
+msgid "Settings"
+msgstr "Configurações"
+
+#: admin/views/admin.php:33
+msgid "Insert Pinit Button on hover"
+msgstr "Inserir Pinit Button no hover"
+
+#: admin/views/admin.php:34
+msgid "This feature will be activated on EVERY image of your website."
+msgstr "Esta opção é habilitada em todas as imagens no seu site."
+
+#: admin/views/admin.php:39
+msgid "Activate Pinit buttons in single post"
+msgstr "Habilita botões em artigos únicos"
+
+#: admin/views/admin.php:40
+msgid ""
+"This can be combined with pages and prevent activation in other post types, "
+"archives and frontpage."
+msgstr ""
+
+#: admin/views/admin.php:45
+msgid "Activate Pinit buttons in single pages"
+msgstr "Habilita botões em uma única página"
+
+#: admin/views/admin.php:46
+msgid ""
+"This can be combined with post and prevent activation in other post types, "
+"archives and frontpage."
+msgstr ""
+
+#: admin/views/admin.php:51
+msgid "Round Button"
+msgstr "Botão Redondo"
+
+#: admin/views/admin.php:56
+msgid "Large Button"
+msgstr "Botão grande"
+
+#: admin/views/admin.php:61
+msgid "Button Color"
+msgstr "Cor do botão"
+
+#: admin/views/admin.php:62 admin/views/admin.php:73
+msgid "Useless if round button setting is active"
+msgstr "Inútil se botões redondos são ativos"
+
+#: admin/views/admin.php:66
+msgid "Red"
+msgstr "Vermelho"
+
+#: admin/views/admin.php:67
+msgid "Gray"
+msgstr "Cinza"
+
+#: admin/views/admin.php:68
+msgid "White"
+msgstr "Branco"
+
+#: admin/views/admin.php:72
+msgid "Language"
+msgstr "Idioma"
+
+#: admin/views/admin.php:77
+msgid "English"
+msgstr "Inglês"
+
+#: admin/views/admin.php:78
+msgid "Japanese"
+msgstr "Japonês"
+
+#: admin/views/admin.php:88
+msgid "Codeat Newsletter"
+msgstr "Boletim de Codeat"
+
+#: admin/views/admin.php:119
+msgid "Follow us"
+msgstr "Siga-nos"
+
+#: admin/views/admin.php:130
+msgid "A Codeat Plugin"
+msgstr "Um plugin de Codeat"
+
+#: includes/widgets/widgets.php:12
+msgid "Pinterest (Pinit)"
+msgstr "Pinterest (Pinit)"
+
+#: includes/widgets/widgets.php:13
+msgid "Show Pit, Profile or Board Widget."
+msgstr "Mostrar widget do Pit, do Perfil ou da tábua."
+
+#: includes/widgets/widgets.php:104
+msgid "Title:"
+msgstr "Título:"
+
+#: includes/widgets/widgets.php:109
+msgid "Type:"
+msgstr "Tipo:"
+
+#: includes/widgets/widgets.php:128
+#, php-format
+msgid "Pinterest %1$s URL:"
+msgstr "Pinterest %1$s URL:"
+
+#: includes/widgets/widgets.php:133
+msgid "E.g."
+msgstr "Exemplo"
+
+#: includes/widgets/widgets.php:141
+msgid "Image Width:"
+msgstr "Largura da imagem:"
+
+#: includes/widgets/widgets.php:144
+msgid "min: 60; leave blank for 80"
+msgstr "min: 60; deixe em branco para 80"
+
+#: includes/widgets/widgets.php:148
+msgid "Board Height:"
+msgstr "Altura da tábua:"
+
+#: includes/widgets/widgets.php:151
+msgid "min: 60; leave blank for 400"
+msgstr "min: 60; deixe em branco para 400"
+
+#: includes/widgets/widgets.php:155
+msgid "Board Width:"
+msgstr "Largura da tábua:"
+
+#: includes/widgets/widgets.php:158
+msgid "min: 130; leave blank for 400"
+msgstr "min: 130; deixe em branco para 400"
+
+#~ msgid ""
+#~ "Activate Pinit buttons in sigle post only (This could be combined with "
+#~ "pages)"
+#~ msgstr ""
+#~ "Ativar botões apenas num unico artigo (isto pode ser junto com páginas)"
+
+#~ msgid ""
+#~ "Activate Pinit buttons in sigle pages only (This could be combined with "
+#~ "posts)"
+#~ msgstr ""
+#~ "Ativar botões Pinit apenas numa unica pagina (isto pode ser junto com "
+#~ "arigos)"
+
+#~ msgid "min: 60; leave blank for 175"
+#~ msgstr "min: 60; deixe em branco para 400"
+
+#~ msgid "Pinterest Profile Widget"
+#~ msgstr "Perfil do widget de Pinterest"
+
+#~ msgid "Show up to 30 of your latest pins on your site."
+#~ msgstr "Mostra até 30 de seus pins mais recentes no seu site."
+
+#~ msgid "Show up to 30 of your favorite board's latest pins."
+#~ msgstr "Mostre até 30 pins favoritos da sua tábua."
