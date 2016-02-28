@@ -74,6 +74,7 @@ Or simply install it from the WordPress Dashboard Plugins section searching for 
 * Pinit Button Size Checkbox
 * Pinit Button Layout Checkbox
 * Pinit Button for Japanese Language
+* Enqueued JavaScript for Widget refactored and fixed (now in widget-admin.js)
 * Translation Ready (.pot and textdomains provided)
 
 = 2.0.0 =
