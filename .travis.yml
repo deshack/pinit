@@ -12,8 +12,6 @@ notifications:
     on_failure: change
   slack:
     secure: A5nViKwWCjwXgqpvl7G1gUGnHa1j8gk8J0vS9oNfsovvJplvO67LVN/TcF2xxDEmraJCTlyg8ytBMAQH79V+o1Sx40vWss3pVJBv4orfY1dc9GqR+gi80K+xKFKRNnIXVpGwZf9PD8MaXD60McDSq1nDTZANn3tc8dTzImkbgxA=
-    on_success: never
-    on_failure: change
 env:
 - WP_VERSION=latest WP_MULTISITE=0
 matrix:
