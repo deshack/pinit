@@ -1,0 +1,25 @@
+language: php
+php:
+  - 5.2
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+  slack:
+    secure: A5nViKwWCjwXgqpvl7G1gUGnHa1j8gk8J0vS9oNfsovvJplvO67LVN/TcF2xxDEmraJCTlyg8ytBMAQH79V+o1Sx40vWss3pVJBv4orfY1dc9GqR+gi80K+xKFKRNnIXVpGwZf9PD8MaXD60McDSq1nDTZANn3tc8dTzImkbgxA=
+    on_success: never
+    on_failure: change
+env:
+- WP_VERSION=latest WP_MULTISITE=0
+matrix:
+  include:
+  - php: 5.3
+    env: WP_VERSION=latest WP_MULTISITE=1
+before_script:
+- bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
+script: phpunit
