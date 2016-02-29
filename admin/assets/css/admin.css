@@ -44,11 +44,13 @@
 	padding-left:10px;
 }
 .settings-tab{
-	float:left
+	float:left;
+	max-width: 650px;
 }
 .right-column-settings-page{
 	max-width:270px;
 	float:right;
+	clear: right;
 }
 #dashboard_right_now a.demo-count:before{
 	content:"\f115";
@@ -84,4 +86,16 @@
 .metabox-holder .postbox.codeat.newsletter .mce-success-response,
 .metabox-holder .postbox.codeat.newsletter {
 	color: #fff;
+}
+
+.settings-tab .cmb-th {
+	width: 350px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1123px) {
+	.right-column-settings-page {
+		display: none;
+	}
 }
