@@ -72,9 +72,6 @@
 .metabox-holder .postbox.codeat.social {
 	min-width: 270px;
 }
-.metabox-holder .postbox.codeat.social .inside a img {
-	filter: invert(100%);
-}
 .metabox-holder .postbox.codeat.newsletter #mce-EMAIL {
 	width: 100%;
 }
@@ -87,7 +84,6 @@
 .metabox-holder .postbox.codeat.newsletter {
 	color: #fff;
 }
-
 .settings-tab .cmb-th {
 	width: 350px;
 }
