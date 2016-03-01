@@ -87,7 +87,12 @@ class Pinit {
 		add_shortcode( 'pit-board', array( $this, 'pit_board_shortcode' ) );
 		//* Get the General settings
 		$this->settings = get_option( $this->get_plugin_slug() . '-settings' );
+		//* Get the WooCommerce related settings
+		if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
+			$this->woo_settings = get_option( $this->get_plugin_slug() . '-woo-settings' );
+
+		}
 		/**
 		 * Register widgets
 		 */
@@ -161,7 +166,10 @@ class Pinit {
 				$this->pinit_is_tag() ||
 				$this->pinit_is_category() ||
 				$this->pinit_is_author() ||
-				$this->pinit_is_front_page() ) {
+				$this->pinit_is_front_page() ||
+				$this->pinit_is_product() ||
+				$this->pinit_is_product_archive() ||
+				$this->pinit_is_shop() ) {
 
 				$this->pinit_html_data( true );
 			}
@@ -301,6 +309,83 @@ class Pinit {
         } else {
             return false;
         }
+    }
+
+    /**
+     * Check if woocommerce is active
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_woo_active() {
+        if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Check the settings and if is product page
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_product() {
+    	if ( $this->pinit_is_woo_active() ) {
+	        if( !empty( $this->woo_settings[ 'product_page' ] ) && is_product() ) {
+	            return true;
+	        } else {
+	            return false;
+	        }
+	    }
+	    else {
+	    	return false;
+	    }
+    }
+
+    /**
+     * Check the settings and if is shop page
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_shop() {
+    	if ( $this->pinit_is_woo_active() ) {
+	        if( !empty( $this->woo_settings[ 'shop_page' ] ) && is_shop() ) {
+	            return true;
+	        } else {
+	            return false;
+	        }
+	    }
+	    else {
+	    	return false;
+	    }
+    }
+
+    /**
+     * Check the settings and if is product archive
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_product_archive() {
+    	if ( $this->pinit_is_woo_active() ) {
+	        if( !empty( $this->woo_settings[ 'product_archive' ] ) ) {
+	        	if ( is_product_tag() || is_product_category() ) {
+	            	return true;
+	            }
+	            else {
+	            	return false;
+	            }
+	        }
+	        else {
+	            return false;
+	        }
+	    }
+	    else {
+	    	return false;
+	    }
     }
 
     /**

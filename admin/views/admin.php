@@ -11,6 +11,19 @@
  * @link      http://codeat.co
  * @copyright 2016 GPL v2 and Later
  */
+
+/**
+             * Checks if WooCommerce is active
+             **/
+function pinit_woo_active() {
+    if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 ?>
 
 <div class="wrap">
@@ -20,6 +33,11 @@
     <div id="tabs" class="settings-tab">
         <ul>
             <li><a href="#tabs-1"><?php _e( 'Settings', $this->plugin_slug ); ?></a></li>
+            <?php
+             if ( pinit_woo_active() ) {
+                echo '<li><a href="#tabs-2">WooCommerce</a></li>';
+            }
+        ?>
         </ul>
         <div id="tabs-1" class="wrap">
             <?php
@@ -66,7 +84,7 @@
                 'type' => 'checkbox',
             ) );
             $cmb->add_field( array(
-                'name' => __( 'Activate Pinit buttons in authors pages', $this->plugin_slug ),
+                'name' => __( 'Activate Pinit buttons in author pages', $this->plugin_slug ),
                 'desc' => __('This can be combined with previous settings and prevent activation in other post types, archives and frontpage.', $this->plugin_slug ),
                 'id' => 'author_page',
                 'type' => 'checkbox',
@@ -105,6 +123,37 @@
             cmb2_metabox_form( $this->plugin_slug . '_options', $this->plugin_slug . '-settings' );
             ?>
         </div>
+        <?php
+             if ( pinit_woo_active() ) {
+                echo '<div id="tabs-2" class="wrap">';
+                $cmb2 = new_cmb2_box( array(
+                    'id' => $this->plugin_slug . '_woo_options',
+                    'hookup' => false,
+                    'show_on' => array( 'key' => 'options-page', 'value' => array( $this->plugin_slug ), ),
+                    'show_names' => true,
+                    ) );
+                $cmb2->add_field( array(
+                    'name' => __( 'Activate Pinit buttons in WooCommerce product pages', $this->plugin_slug ),
+                    'desc' => __('This can be combined with post and prevent activation in other post types, archives and front page.', $this->plugin_slug ),
+                    'id' => 'product_page',
+                    'type' => 'checkbox',
+                ) );
+                $cmb2->add_field( array(
+                    'name' => __( 'Activate Pinit buttons in WooCommerce product tag and category archives', $this->plugin_slug ),
+                    'desc' => __('This can be combined with post and prevent activation in other post types, archives and front page.', $this->plugin_slug ),
+                    'id' => 'product_archive',
+                    'type' => 'checkbox',
+                ) );
+                $cmb2->add_field( array(
+                    'name' => __( 'Activate Pinit buttons in WooCommerce shop page', $this->plugin_slug ),
+                    'desc' => __('This can be combined with post and prevent activation in other post types, archives and front page.', $this->plugin_slug ),
+                    'id' => 'shop_page',
+                    'type' => 'checkbox',
+                ) );
+                cmb2_metabox_form( $this->plugin_slug . '_woo_options', $this->plugin_slug . '-woo-settings' );
+                echo '</div>';
+            }
+        ?>
     </div>
     <!-- Begin MailChimp  -->
     <div class="right-column-settings-page metabox-holder">
