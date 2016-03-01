@@ -48,6 +48,30 @@
                 'type' => 'checkbox',
             ) );
             $cmb->add_field( array(
+                'name' => __( 'Activate Pinit buttons in tag archives', $this->plugin_slug ),
+                'desc' => __('This can be combined with previous settings and prevent activation in other post types, archives and frontpage.', $this->plugin_slug ),
+                'id' => 'tag_archive',
+                'type' => 'checkbox',
+            ) );
+            $cmb->add_field( array(
+                'name' => __( 'Activate Pinit buttons in category archives', $this->plugin_slug ),
+                'desc' => __('This can be combined with previous settings and prevent activation in other post types, archives and frontpage.', $this->plugin_slug ),
+                'id' => 'category_archive',
+                'type' => 'checkbox',
+            ) );
+            $cmb->add_field( array(
+                'name' => __( 'Activate Pinit buttons in front page', $this->plugin_slug ),
+                'desc' => __('This can be combined with post and prevent activation in other post types, archives and single.', $this->plugin_slug ),
+                'id' => 'front_page',
+                'type' => 'checkbox',
+            ) );
+            $cmb->add_field( array(
+                'name' => __( 'Activate Pinit buttons in authors pages', $this->plugin_slug ),
+                'desc' => __('This can be combined with previous settings and prevent activation in other post types, archives and frontpage.', $this->plugin_slug ),
+                'id' => 'author_page',
+                'type' => 'checkbox',
+            ) );
+            $cmb->add_field( array(
                 'name' => __( 'Round Button', $this->plugin_slug ),
                 'id' => 'round',
                 'type' => 'checkbox',

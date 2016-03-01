@@ -151,36 +151,27 @@ class Pinit {
      */
 
 	public function pit_pinit_js() {
+		if( !empty( $this->settings[ 'on_hover' ] )){
 
-		if( !empty( $this->settings[ 'single_post' ] ) && !empty( $this->settings[ 'single_page' ] ) ) {
-			if( is_singular('post') || is_singular('page') && !is_front_page()) {
+			if( $this->pinit_is_post() ||
+				$this->pinit_is_page() ||
+				$this->pinit_is_tag() ||
+				$this->pinit_is_category() ||
+				$this->pinit_is_author() ||
+				$this->pinit_is_front_page() ) {
+
 				$this->pinit_html_data( true );
 			}
 
 			else {
-				$this->pinit_html_data( false );
-			}
-		}
-		elseif( !empty( $this->settings[ 'single_page' ] ) && empty( $this->settings[ 'single_post' ] ) ) {
-			if( is_singular('page') && !is_front_page()) {
-				$this->pinit_html_data( true );
-			}
 
-			else {
 				$this->pinit_html_data( false );
 			}
 		}
-		elseif( !empty( $this->settings[ 'single_post' ] ) && empty( $this->settings[ 'single_page' ] ) ) {
-			if( is_singular('post')) {
-				$this->pinit_html_data( true );
-			}
 
-			else {
-				$this->pinit_html_data( false );
-			}
-		}
 		else {
-			$this->pinit_html_data( true );
+
+			$this->pinit_html_data( false );
 		}
 	}
 
@@ -195,7 +186,7 @@ class Pinit {
      */
 	public function pinit_html_data( $active ){
 		if ( $active == true ) {
-			if( !empty( $this->settings[ 'on_hover' ] )){
+			
 				$yoda = ' data-pin-hover="true"';
 
 				if( !empty( $this->settings[ 'round' ] )) {
@@ -217,13 +208,6 @@ class Pinit {
 					$yoda .= ' data-pin-tall="true"';
 				}
 
-
-			}
-
-			else {
-				$yoda = '';
-			}
-
 			echo '<script async defer' . $yoda . ' type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
 		}
 		else {
@@ -231,6 +215,92 @@ class Pinit {
 			echo '<script async defer type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>' . "\n";
 		}
 	}
+
+	/**
+     * Check the settings and if is a single post
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_post() {
+        if( !empty( $this->settings[ 'single_post' ] ) && is_singular( 'post' )) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+	/**
+     * Check the settings and if is a single page
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_page() {
+        if( !empty( $this->settings[ 'single_page' ] ) && is_singular( 'page' ) && !is_front_page() ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Check the settings and if is a tag archive
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_tag() {
+        if( !empty( $this->settings[ 'tag_archive' ] ) && is_tag() ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Check the settings and if is a category archive
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_category() {
+        if( !empty( $this->settings[ 'category_archive' ] ) && is_category() ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Check the settings and if is front page
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_front_page() {
+        if( !empty( $this->settings[ 'front_page' ] ) && is_front_page() ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Check the settings and if is author page
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_author() {
+        if( !empty( $this->settings[ 'author_page' ] ) && is_author() ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
 
 	/**
 	 * NOTE:  Shortcode simple set of functions for creating macro codes for use
