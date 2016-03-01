@@ -151,7 +151,10 @@ class Pinit {
      */
 
 	public function pit_pinit_js() {
-		if( !empty( $this->settings[ 'on_hover' ] )){
+		if( $this->pinit_is_active_sitewide() ) {
+			$this->pinit_html_data( true );
+		}
+		elseif( !empty( $this->settings[ 'on_hover' ] ) && !$this->pinit_is_active_sitewide() ){
 
 			if( $this->pinit_is_post() ||
 				$this->pinit_is_page() ||
@@ -169,7 +172,7 @@ class Pinit {
 			}
 		}
 
-		else {
+		elseif( empty( $this->settings[ 'on_hover' ] ) ) {
 
 			$this->pinit_html_data( false );
 		}
@@ -297,6 +300,26 @@ class Pinit {
             return true;
         } else {
             return false;
+        }
+    }
+
+    /**
+     * Check the settings and if is pinit button active sitewide
+     * 
+     * @since 2.2.0
+     * @return boolean
+     */
+    public function pinit_is_active_sitewide() {
+        if( !empty( $this->settings[ 'on_hover' ] ) &&
+        ( !empty( $this->settings[ 'single_post' ] ) ||
+				!empty( $this->settings[ 'single_page' ] ) ||
+				!empty( $this->settings[ 'tag_archive' ] ) ||
+				!empty( $this->settings[ 'category_archive' ] ) ||
+				!empty( $this->settings[ 'front_page' ] ) ||
+				!empty( $this->settings[ 'author_page' ] ) ) ) {
+            return false;
+        } else {
+            return true;
         }
     }
 
