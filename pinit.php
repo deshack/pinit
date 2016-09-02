@@ -13,7 +13,7 @@
  * Plugin Name:       Pinit
  * Plugin URI:        http://codeat.co/pinit
  * Description: Handy plugin that adds Pinterest Follow Button, Pin Widget, Profile Widget and Board Widget to your WordPress site.
- * Version:           2.1.0
+ * Version:           2.1.1
  * Author:            deshack
  * Author URI:        https://github.com/deshack/
  * Text Domain:       pinit

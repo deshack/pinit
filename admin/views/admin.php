@@ -58,17 +58,6 @@
                 'type' => 'checkbox',
             ) );
             $cmb->add_field( array(
-                'name' => __( 'Button Color', $this->plugin_slug ),
-                'desc' => __('Useless if round button setting is active', $this->plugin_slug ),
-                'id' => 'color',
-                'type' => 'select',
-                'options' => array(
-                    'red' => __( 'Red', $this->plugin_slug ),
-                    'gray' => __( 'Gray', $this->plugin_slug ),
-                    'white' => __( 'White', $this->plugin_slug ),
-                )
-            ) );
-            $cmb->add_field( array(
                 'name' => __( 'Language', $this->plugin_slug ),
                 'desc' => __('Useless if round button setting is active', $this->plugin_slug ),
                 'id' => 'language',
@@ -118,9 +107,9 @@
         <div class="postbox codeat social">
             <h3 class="hndle"><span><?php _e( 'Follow us', $this->plugin_slug ); ?></span></h3>
             <div class="inside">
-                <a href="https://facebook.com/codeatco/" target="_blank"><img src="http://i2.wp.com/codeat.co/wp-content/uploads/2016/02/social-facebook.png?w=52" alt="facebook"></a>
-                <a href="https://twitter.com/codeatco/" target="_blank"><img src="http://i0.wp.com/codeat.co/wp-content/uploads/2016/02/social-twitter.png?w=52" alt="twitter"></a>
-                <a href="https://linkedin.com/company/codeat/" target="_blank"><img src="http://i1.wp.com/codeat.co/wp-content/uploads/2016/02/social-linkedin.png?w=52" alt="linkedin"></a>
+                <a href="https://facebook.com/codeatco/" target="_blank"><img src="http://i2.wp.com/codeat.co/wp-content/uploads/2016/03/social-facebook-light.png?w=52" alt="facebook"></a>
+                <a href="https://twitter.com/codeatco/" target="_blank"><img src="http://i0.wp.com/codeat.co/wp-content/uploads/2016/03/social-twitter-light.png?w=52" alt="twitter"></a>
+                <a href="https://linkedin.com/company/codeat/" target="_blank"><img src="http://i1.wp.com/codeat.co/wp-content/uploads/2016/03/social-linkedin-light.png?w=52" alt="linkedin"></a>
             </div>
         </div>
     </div>
@@ -130,9 +119,9 @@
             <h3 class="hndle"><span><?php _e( 'A Codeat Plugin', $this->plugin_slug ); ?></span></h3>
             <div class="inside">
                 <a href="http://codeat.co" target="_blank"><img src="http://i2.wp.com/codeat.co/wp-content/uploads/2016/02/cropped-logo-light.png?w=236" alt="Codeat"></a>
+                <a href="http://deshack.net/" class="deshack" target="_blank">Made with &hearts; in collaboration with deshack</a>
                 <a href="http://codeat.co/glossary/" target="_blank"><img src="http://i0.wp.com/codeat.co/glossary/wp-content/uploads/sites/3/2016/02/cropped-Glossary_logo-ori-Lite-1.png?w=236" alt="Glossary For WordPress"></a>
                 <a href="http://codeat.co/pinit/" target="_blank"><img src="http://i1.wp.com/codeat.co/pinit/wp-content/uploads/sites/2/2016/02/cropped-PinterestForWP_logo-ori-Lite-1.png?w=236" alt="Pinterest for WordPress"></a>
-                <a href="http://codeat.co/video-ad/" target="_blank"><img src="http://i1.wp.com/codeat.co/video-ad/wp-content/uploads/sites/4/2016/02/cropped-VideoAd_logo-ori-Lite.png?w=236" alt="Video Ad Plugin For WordPress"></a>
             </div>
         </div>
     </div>

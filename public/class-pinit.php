@@ -29,7 +29,7 @@ class Pinit {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '2.1.0';
+	const VERSION = '2.1.1';
 
 	/**
 	 * Unique identifier for your plugin.
@@ -203,10 +203,6 @@ class Pinit {
 				}
 
 				else {
-
-					if( isset( $this->settings[ 'color' ] )){
-						$yoda .= ' data-pin-color="'. $this->settings[ 'color' ] . '"';
-					}
 
 					if( isset( $this->settings[ 'language' ] )){
 						$yoda .= ' data-pin-lang="'. $this->settings[ 'language' ] . '"';
