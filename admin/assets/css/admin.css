@@ -62,6 +62,11 @@
     display: block;
 	text-align: center;
 }
+.metabox-holder .postbox.codeat .inside a.deshack {
+    color: #fff;
+    text-align: left !important;
+    text-decoration: none;
+}
 .metabox-holder .postbox.codeat .inside a img {
 	margin-bottom: 16px;
 }

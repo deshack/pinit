@@ -3,8 +3,8 @@
 **Donate link:** http://www.deshack.net/donate/  
 **Tags:** pinterest, badge, embedded pin, pin,embed pin, pinterest badge, embedded profile,embed profile, embedded board, embed board, pinterest follow, widgets, widgets pinterest, widget pinterest, sidebar, social network, shortcodes  
 **Requires at least:** 3.5  
-**Tested up to:** 4.4  
-**Stable tag:** 2.1.0  
+**Tested up to:** 4.6  
+**Stable tag:** 2.1.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.txt  
 
