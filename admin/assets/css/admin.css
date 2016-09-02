@@ -43,6 +43,9 @@
 .metabox-holder .postbox h3{
 	padding-left:10px;
 }
+.js .postbox .hndle {
+	cursor: default;
+}
 .settings-tab{
 	float:left;
 	max-width: 650px;
@@ -55,17 +58,34 @@
 #dashboard_right_now a.demo-count:before{
 	content:"\f115";
 }
+.metabox-holder .inside a img {
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+.metabox-holder .inside a:hover img,
+.metabox-holder .inside a:focus img {
+	opacity: 0.7;
+}
 .metabox-holder .postbox.codeat .inside {
-    margin: 0;
-    background: #4E3A4C;
-    padding: 20px 14px;
-    display: block;
+	margin: 0;
+	background: #4E3A4C;
+	padding: 20px 14px;
+	display: block;
 	text-align: center;
 }
 .metabox-holder .postbox.codeat .inside a.deshack {
-    color: #fff;
-    text-align: left !important;
-    text-decoration: none;
+	color: #fff;
+	text-align: left !important;
+	text-decoration: none;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+.metabox-holder .postbox.codeat .inside a.deshack:hover,
+.metabox-holder .postbox.codeat .inside a.deshack:focus {
+	color: #cac4c9;
+	color: rgba(255, 255, 255, 0.7);
 }
 .metabox-holder .postbox.codeat .inside a img {
 	margin-bottom: 16px;
@@ -83,6 +103,8 @@
 .metabox-holder .postbox.codeat.newsletter #mc-embedded-subscribe {
 	display: block;
 	margin: 10px auto 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 .metabox-holder .postbox.codeat.newsletter .mc-field-group label,
 .metabox-holder .postbox.codeat.newsletter .mce-success-response,
