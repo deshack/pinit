@@ -64,6 +64,11 @@ Or simply install it from the WordPress Dashboard Plugins section searching for 
 
 == Changelog ==
 
+= 2.1.1 =
+* Button Color option removed (no more supported by Pinterest)
+* Settings Page design improvements
+* Support for WordPress 4.6
+
 = 2.1.0 =
 * Codebase refactored on top of [WordPress-Plugin-Boilerplate-Powered
 ](https://github.com/Mte90/WordPress-Plugin-Boilerplate-Powered)
